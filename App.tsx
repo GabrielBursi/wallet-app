@@ -1,5 +1,7 @@
 import React from 'react';
 import { SafeAreaView ,Text,} from 'react-native';
+import Config from 'react-native-config'
+import StorybookUI from './.storybook'
 
 function App(): React.JSX.Element {
 
@@ -10,4 +12,4 @@ function App(): React.JSX.Element {
   );
 }
 
-export default App;
+export default Config.LOAD_STORYBOOK === 'true' ? StorybookUI : App

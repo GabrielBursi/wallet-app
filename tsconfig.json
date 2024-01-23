@@ -31,7 +31,7 @@
   "include": [".jest/setup.ts", "**/*.ts", "**/*.tsx"],
   "exclude": [
     "node_modules",
-    "babel.config.js",
+    ".babelrc.js",
     "metro.config.js",
     "jest.config.ts"
   ]
