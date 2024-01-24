@@ -14,7 +14,8 @@
     "generate:s": "plop --plopfile ./generators/screen.mjs",
     "debug": "npx react-devtools",
     "sb": "react-native start",
-    "presb": "sb-rn-get-stories",
+    "get-sb": "sb-rn-get-stories",
+    "presb": "npm run get-sb",
     "storybook-watcher": "sb-rn-watcher"
   },
   "dependencies": {
