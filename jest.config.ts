@@ -5,6 +5,7 @@ const config: Config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  setupFiles: ["./node_modules/react-native-gesture-handler/jestSetup.js"],
   modulePaths: ['<rootDir>/src'],
   testPathIgnorePatterns: ['/node_modules/'],
   roots: ["<rootDir>/src"],
