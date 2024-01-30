@@ -11,7 +11,7 @@ export const TestProvider = ({ children }: PropsWithChildren) => {
     return (
         <QueryClientProvider client={queryClient}>
             <NavigationContainer>
-                <GlobalStyles />
+                {/* <GlobalStyles /> */}
                 <SafeAreaProvider
                     initialMetrics={{
                         frame: { x: 0, y: 0, width: 0, height: 0 },
