@@ -1,6 +1,6 @@
 declare module 'react-native-config' {
     export interface NativeConfig {
-        API_URL?: string;
+        LOAD_STORYBOOK?: 'true' | 'false';
     }
 
     export const Config: NativeConfig
