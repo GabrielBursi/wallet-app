@@ -1,6 +1,6 @@
-import { RenderOptions, render } from '@testing-library/react-native'
 import { ReactElement } from 'react'
-import { TestProvider } from '../providers'
+import { RenderOptions, render } from '@testing-library/react-native'
+import { TestProvider } from '@/providers'
 
 export const customRender = (
     ui: ReactElement,

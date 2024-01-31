@@ -1,8 +1,8 @@
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import { Home } from '../screens';
-import { RootDrawerParamList } from '../types/routes';
+import { RootDrawerParamList } from '@/types/routes';
+import { Home } from '@/screens';
 
 const Drawer = createDrawerNavigator<RootDrawerParamList>();
 
