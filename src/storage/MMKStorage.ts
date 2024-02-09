@@ -1,7 +1,7 @@
 import { MMKV } from "react-native-mmkv";
 import { IStorageServices } from "@/types/storage";
 
-const storage = new MMKV()
+export const storage = new MMKV()
 
 export const MMKVServices: IStorageServices = {
     GetItem: async key => {
