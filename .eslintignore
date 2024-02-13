@@ -1,3 +1,7 @@
 !.storybook
 !.jest
 generators
+.eslintrc.js
+ios/
+android/
+*.config.js

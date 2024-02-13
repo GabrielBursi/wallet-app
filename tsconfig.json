@@ -2,12 +2,7 @@
 	"compilerOptions": {
 		"target": "esnext",
 		"module": "commonjs",
-		"types": [
-			"react-native",
-			"jest",
-			"@testing-library/jest-native",
-			"@testing-library/jest-native/extend-expect'"
-		],
+		"types": ["react-native", "jest", "@testing-library/jest-native"],
 		"lib": [
 			"es2019",
 			"es2020.bigint",
@@ -35,13 +30,15 @@
 		"rootDir": "./",
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["src/*"],
+			"@types/*": ["src/types/*"],
+			"@api/*": ["src/api/*"]
 		}
 	},
-	"include": [".jest/setup.ts", "**/*.ts", "**/*.tsx"],
+	"include": [".jest/setup.ts", "**/*.ts", "**/*.tsx", "ReactotronConfig.js"],
 	"exclude": [
 		"node_modules",
-		".babelrc.js",
+		"babel.config.js",
 		"metro.config.js",
 		"jest.config.ts"
 	]

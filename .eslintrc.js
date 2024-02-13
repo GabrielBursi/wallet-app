@@ -27,9 +27,9 @@ module.exports = {
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		ecmaVersion: 'latest',
-		sourceType: 'module',
+		parser: '@typescript-eslint/parser',
 		project: './tsconfig.json',
+		tsconfigRootDir: __dirname,
 	},
 	plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
 	rules: {

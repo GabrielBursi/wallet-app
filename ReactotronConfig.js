@@ -5,6 +5,7 @@ import { reactotronRedux } from 'reactotron-redux'
 
 import { storage } from './src/storage/MMKStorage'
 
+// eslint-disable-next-line @typescript-eslint/no-unsafe-argument
 const reactotron = Reactotron.setAsyncStorageHandler(AsyncStorage)
 	.configure({ name: 'React Native Demo' })
 	.useReactNative({
