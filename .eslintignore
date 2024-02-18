@@ -5,3 +5,4 @@ generators
 ios/
 android/
 *.config.js
+*.config.ts
