@@ -20,7 +20,7 @@
 		"lint": "eslint --ext .tsx --ext .ts src/",
 		"prettier:write": "npx prettier --write **/*.{ts,tsx,json}",
 		"prettier:format": "prettier --check ./src",
-		"format": "npm run prettier:format && npm run prettier:write && npm run lint",
+		"format": "npm run prettier:write && npm run lint",
 		"prepare": "husky"
 	},
 	"dependencies": {
@@ -124,19 +124,6 @@
 		"webpack": "^5.89.0",
 		"webpack-cli": "^5.1.4",
 		"webpack-dev-server": "^4.15.1"
-	},
-	"lint-staged": {
-		"src/**/*.{ts,tsx}": [
-			"eslint --ext .tsx --ext .ts src/ --fix"
-		],
-		"./src/**": [
-			"prettier --write ."
-		]
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"engines": {
 		"node": ">=18"
