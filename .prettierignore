@@ -1,3 +1,10 @@
-!.storybook
-!.jest
-coverage
+.storybook
+.jest
+generators
+.eslintrc.js
+ios/
+android/
+*.config.js
+*.config.ts
+index.js
+.husky
