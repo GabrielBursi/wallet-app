@@ -1,13 +1,23 @@
 {
 	"name": "bolierplate-reactnative",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"description": "Este é um boilerplate de projetos para iniciar rapidamente o desenvolvimento de aplicativos com React Native.",
+	"homepage": "https://github.com/GabrielBursi/BoilerplateRN",
+	"bugs": {
+		"url": "https://github.com/GabrielBursi/BoilerplateRN/issues",
+		"email": "gabriellbursii@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GabrielBursi/BoilerplateRN"
+	},
 	"private": true,
 	"author": "Gabriel Bursi",
 	"scripts": {
 		"android": "react-native run-android",
 		"ios": "react-native run-ios",
 		"start": "react-native start",
-		"dev": "react-native run android --active-arch-only",
+		"dev": "react-native run-android --active-arch-only",
 		"test": "jest --passWithNoTests --maxWorkers=50% --verbose",
 		"test:watch": "jest --watchAll --maxWorkers=25% --verbose",
 		"generate:c": "plop --plopfile ./generators/component.mjs",
@@ -15,6 +25,7 @@
 		"sb": "react-native start",
 		"get-sb": "sb-rn-get-stories",
 		"presb": "npm run get-sb",
+		"prestart": "npm run get-sb",
 		"storybook-watcher": "sb-rn-watcher",
 		"rdt": "react-devtools",
 		"lint": "eslint --ext .tsx --ext .ts src/",
@@ -44,7 +55,8 @@
 		"react-native-screens": "^3.29.0",
 		"react-redux": "^9.1.0",
 		"styled-components": "^6.1.8",
-		"zod": "^3.22.4"
+		"zod": "^3.22.4",
+		"react-native-safe-area-context": "^4.8.2"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.23.7",
@@ -112,7 +124,6 @@
 		"pretty-quick": "^4.0.0",
 		"react-devtools": "^5.0.0",
 		"react-dom": "^18.2.0",
-		"react-native-safe-area-context": "^4.8.2",
 		"react-query-native-devtools": "^4.0.0",
 		"react-test-renderer": "18.2.0",
 		"reactotron-react-native": "^5.1.0",
