@@ -48,9 +48,7 @@ try {
 } catch {}
 
 const getStories = () => {
-  return {
-    "./src/components/Teste/Teste.stories.tsx": require("../src/components/Teste/Teste.stories.tsx"),
-  };
+  return {};
 };
 
 configure(getStories, module, false);
