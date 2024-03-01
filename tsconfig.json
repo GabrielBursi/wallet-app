@@ -35,9 +35,7 @@
 		"rootDir": "./",
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"],
-			"@types/*": ["src/types/*"],
-			"@api/*": ["src/api/*"]
+			"@/*": ["src/*"]
 		}
 	},
 	"include": [".jest/setup.ts", "**/*.ts", "**/*.tsx", "ReactotronConfig.js"],

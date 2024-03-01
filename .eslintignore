@@ -8,3 +8,4 @@ android/
 *.config.ts
 index.js
 .husky
+msw.polyfills.js
