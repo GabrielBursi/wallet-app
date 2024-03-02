@@ -1,21 +1,20 @@
-if (__DEV__) {
-	import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
-}
-
-async function enableMocking() {
-	if (!__DEV__) {
-		return
-	}
-
-	await import('./msw.polyfills')
-	const { server } = await import('./src/mocks/server')
-	server.listen()
-}
-
 import { AppRegistry } from 'react-native'
 import App from './App'
 import { name as appName } from './app.json'
 
-enableMocking().then(() => {
-	AppRegistry.registerComponent(appName, () => App)
+async function setupDevEnv() {
+	if (!__DEV__) {
+		return false
+	}
+
+	import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
+	await import('./msw.polyfills')
+	const { server } = await import('./src/tests')
+	server.listen()
+	return true
+}
+
+AppRegistry.registerComponent(appName, () => {
+	setupDevEnv().then((isDev) => isDev && console.log('server mock is running!'))
+	return App
 })
