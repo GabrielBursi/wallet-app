@@ -9,3 +9,4 @@ android/
 index.js
 .husky
 msw.polyfills.js
+.detoxrc.js
