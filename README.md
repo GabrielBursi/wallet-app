@@ -1,79 +1,89 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Boilerplate de Projetos com React Native e TypeScript
 
-# Getting Started
+Este é um boilerplate de projetos para iniciar rapidamente o desenvolvimento de aplicativos com React Native.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Pré-requisitos
 
-## Step 1: Start the Metro Server
+Esse boilerplate leva em consideração que você já tenha seguidos todos os passos corretamente para configurar o ambiente de desenvolvimento do React Native:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [Environment Setup](https://reactnative.dev/docs/environment-setup)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Quais pacotes vem com esse boilerplate
 
-```bash
-# using npm
-npm start
+* react-native-community/hooks
+* react-navigation
+* redux
+* react-query
+* axios
+* react-hook-form
+* react-native-config
+* react-native-gesture-handler
+* react-native-mmkv
+* react-native-reanimated
+* styled-components
+* zod
+* jest
+* detox
+* testing-library
+* msw
+* plop
+* husky
+* storybook
+* reactotron
+* react-devtools
+* prettier
+* eslint
 
-# OR using Yarn
-yarn start
-```
+## Configuração inicial
 
-## Step 2: Start your Application
+Siga as etapas abaixo para configurar  o uso do boilerplate:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+1. Entre no terminal da onde você quer criar seu projeto
+2. Digite o seguindo comando:
 
-### For Android
+   `git clone https://github.com/GabrielBursi/BoilerplateRN.git`
+3. Renomeie a pasta para o nome da qual você deseja
+4. Entre na pasta do projeto criado:
 
-```bash
-# using npm
-npm run android
+   `cd <nome_projeto>`
+5. Instale as dependências do projeto usando o seguinte comando:
 
-# OR using Yarn
-yarn android
-```
+   `npm install`
+6. Altere as propriedades que deseja no arquivo **package.json**
+7. Altere todos os nomes de arquivos/pastas de **BoilerplateRN** para **<nome_projeto>**
 
-### For iOS
+   * Lembrando que alguns lugares está escrito o nome do projeto em CamelCase e em outros está escrito tudo minúsculo
+   * Procure na sua IDE por arquivos BoilerplateRN e substitua para o <nome_projeto> em CamelCase
+   * Procure na sua IDE por arquivos boilerplatern e substitua para o <nome_projeto> tudo minúsculo
+8. Altere todos os arquivos que contem o nome do projeto como **BoilerplateRN** para **nome_projeto**
+9. Copie e cole o arquivo **.env.example** na raiz do projeto e renomeie para **.env**
 
-```bash
-# using npm
-npm run ios
+   Finalmente ! Estamos prontos para começar.
 
-# OR using Yarn
-yarn ios
-```
+## Iniciando o projeto
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Siga as etapas abaixo para inicar  o projeto do boilerplate:
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+1. Inicie o Metro:
+   `npm start`
+2. Inicie o emulador Android: `npm run android`
+   * Você tambem pode iniciar o emulador assim em abimente de desenvolvimento: `npm run dev`
+   * Esse comando vai fazer apenas o build de uma ABI (Application Binary Interfaces)
 
-## Step 3: Modifying your App
+## Comandos Específicos
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- `npm run test`: Executa os testes utilizando o Jest, com a opção de passar mesmo sem testes e com até 50% dos workers.
+- `npm run test:watch`: Executa os testes em modo de observação utilizando o Jest, com até 25% dos workers.
+- `npm run e2e:build`: Constrói a configuração de teste end-to-end (e2e) usando Detox para um emulador Android em modo de depuração.
+- `npm run e2e:test`: Executa os testes e2e utilizando Detox em um emulador Android em modo de depuração, com nível de log definido como aviso e captura de screenshots em caso de falha.
+- `npm run generate:c`: Executa a ferramenta de geração de componentes usando Plop e formatação do código após a geração.
+- `npm run generate:s`: Executa a ferramenta de geração de telas (screens) usando Plop e formatação do código após a geração.
+- `npm run generate:e2e`: Executa a ferramenta de geração de testes end-to-end (e2e) usando Plop e formatação do código após a geração.
+- `npm run sb`: Inicia o servidor do Storybook para desenvolvimento.
+- `npm run get-sb`: Executa o comando para obter histórias (stories) do Storybook.
+- `npm run storybook-watcher`: Executa o comando para observar alterações no Storybook.
+- `npm run rdt`: Inicia o React DevTools.
+- `npm run lint`: Executa o ESLint para verificar e corrigir problemas de linting no código-fonte.
+- `npm run prettier:write`: Executa o Prettier para formatar automaticamente o código-fonte.
+- `npm run prettier:format`: Executa o Prettier para verificar a formatação do código-fonte sem fazer alterações.
+- `npm run format`: Executa o Prettier para formatar automaticamente o código-fonte e em seguida executa o ESLint para verificar e corrigir problemas de linting.
