@@ -1,4 +1,4 @@
-package com.boilerplatern;
+package com.walletapp;
 
 import com.wix.detox.Detox;
 import com.wix.detox.config.DetoxConfig;

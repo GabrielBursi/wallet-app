@@ -1,17 +1,7 @@
 {
-	"name": "bolierplate-reactnative",
+	"name": "wallet-app",
 	"version": "1.0.0",
-	"description": "Este é um boilerplate de projetos para iniciar rapidamente o desenvolvimento de aplicativos com React Native.",
-	"homepage": "https://github.com/GabrielBursi/BoilerplateRN",
-	"bugs": {
-		"url": "https://github.com/GabrielBursi/BoilerplateRN/issues",
-		"email": "gabriellbursii@gmail.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/GabrielBursi/BoilerplateRN"
-	},
-	"private": true,
+	"description": "Projeto para praticar React Native.",
 	"author": "Gabriel Bursi",
 	"scripts": {
 		"android": "react-native run-android",
