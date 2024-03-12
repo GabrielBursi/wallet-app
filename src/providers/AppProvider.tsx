@@ -1,3 +1,4 @@
+import { StatusBar } from 'react-native'
 import React, { PropsWithChildren } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -16,7 +17,14 @@ export const AppProvider = ({ children }: PropsWithChildren) => {
 		<QueryClientProvider client={queryClient}>
 			<NavigationContainer>
 				<ThemeProvider theme={theme}>
-					<SafeAreaProvider>{children}</SafeAreaProvider>
+					<SafeAreaProvider>
+						<StatusBar
+							barStyle="dark-content"
+							backgroundColor="transparent"
+							translucent
+						/>
+						{children}
+					</SafeAreaProvider>
 				</ThemeProvider>
 			</NavigationContainer>
 		</QueryClientProvider>
