@@ -2,9 +2,10 @@ import React, { PropsWithChildren } from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { ThemeProvider } from 'styled-components'
 
 import { MMKVServices, initializeStorage } from '@/storage'
-import { GlobalStyles } from '@/styles'
+import { theme } from '@/styles'
 
 export const AppProvider = ({ children }: PropsWithChildren) => {
 	const queryClient = new QueryClient()
@@ -14,8 +15,9 @@ export const AppProvider = ({ children }: PropsWithChildren) => {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<NavigationContainer>
-				<GlobalStyles />
-				<SafeAreaProvider>{children}</SafeAreaProvider>
+				<ThemeProvider theme={theme}>
+					<SafeAreaProvider>{children}</SafeAreaProvider>
+				</ThemeProvider>
 			</NavigationContainer>
 		</QueryClientProvider>
 	)
