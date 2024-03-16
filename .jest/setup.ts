@@ -1,6 +1,7 @@
 import '@testing-library/react-native/extend-expect'
 import '@testing-library/jest-native/extend-expect'
 import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock'
+import { userEvent } from '@testing-library/react-native'
 
 import { server } from '@/tests'
 
@@ -14,6 +15,9 @@ jest.mock('react-native-reanimated', () => {
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper')
 jest.mock('react-native-safe-area-context', () => mockSafeAreaContext)
 
-beforeAll(() => server.listen({ onUnhandledRequest: 'error' }))
+beforeAll(() => {
+	server.listen({ onUnhandledRequest: 'error' })
+	userEvent.setup()
+})
 afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
