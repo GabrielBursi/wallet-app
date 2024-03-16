@@ -4,7 +4,7 @@ import { Text } from 'react-native'
 import { {{pascalCase name}}ScreenProps } from './types'
 import * as S from './styles'
 
-const {{pascalCase name}}Screen = ({ }: {{pascalCase name}}ScreenProps) => {
+export const {{pascalCase name}}Screen = ({ }: {{pascalCase name}}ScreenProps) => {
     return (
         <S.{{pascalCase name}}>
             <Text>{{pascalCase name}}</Text>
@@ -12,13 +12,12 @@ const {{pascalCase name}}Screen = ({ }: {{pascalCase name}}ScreenProps) => {
     )
 }
 
-export default {{pascalCase name}}Screen
 {{else}}
 import React from 'react'
 import { Text } from 'react-native'
 import * as S from './styles'
 
-const {{pascalCase name}}Screen = () => {
+export const {{pascalCase name}}Screen = () => {
     return (
         <S.{{pascalCase name}}>
             <Text>{{pascalCase name}}</Text>
@@ -26,5 +25,4 @@ const {{pascalCase name}}Screen = () => {
     )
 }
 
-export default {{pascalCase name}}Screen
 {{/if}}
