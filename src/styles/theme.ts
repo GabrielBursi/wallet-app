@@ -35,14 +35,17 @@ export const theme = {
 		},
 	},
 	colors: {
-		primary: '#7A5CFF',
-		secondary: '#A6B1E1',
+		primary: '#5B259F',
+		secondary: '#2F1155',
 		mainBg: '#FFFFFF',
 		secondaryBg: '#F2F2F2',
-		primaryText: '#333333',
-		secondaryText: '#536162',
+		primaryText: '#130138',
+		secondaryText: '#9038FF',
+		normalText: '#828282',
 		black: '#000000',
 		white: '#FFFFFF',
+		red: '#FF3333',
+		green: '#56BE15',
 	},
 
 	spacings: {
