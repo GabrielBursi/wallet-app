@@ -1,11 +1,10 @@
-import { ComponentProps } from 'react'
 import { PressableProps } from 'react-native'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import { Icon } from '@/types/utils'
 
 /* eslint-disable @typescript-eslint/ban-types */
 export type ButtonProps = {
 	title: string
 	type?: 'primary' | 'ghost'
-	icon?: ComponentProps<typeof Icon>
+	icon?: Icon
 	fullWidth?: boolean
 } & PressableProps
