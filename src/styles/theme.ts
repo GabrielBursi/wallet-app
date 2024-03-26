@@ -1,7 +1,8 @@
 export const theme = {
 	border: {
 		radius: {
-			big: 10,
+			big: 16,
+			medium: 10,
 			small: 4,
 		},
 	},
