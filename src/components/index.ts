@@ -1,4 +1,5 @@
 export * from './Button'
 // export * from './Input'
 export * from './NotificationCard'
+export * from './SettingOption'
 export * from './SocialButton'
