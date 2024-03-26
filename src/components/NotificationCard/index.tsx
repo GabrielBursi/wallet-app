@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import { useTheme } from 'styled-components/native'
 
 import { NotificationCardProps } from './types'
 import * as S from './styles'
 
-export const NotificationCard = ({
+const NotificationCardMemoized = ({
 	date,
 	description,
 	title,
@@ -56,3 +56,5 @@ export const NotificationCard = ({
 		</S.NotificationCard>
 	)
 }
+
+export const NotificationCard = memo(NotificationCardMemoized)
