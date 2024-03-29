@@ -5,12 +5,13 @@ import { SettingOptionProps } from './types'
 
 import { SettingOption } from '.'
 
-const props: SettingOptionProps = {
-	title: 'jest',
-}
-
 describe('<SettingOption/>', () => {
 	const onPressMock = jest.fn()
+
+	const props: SettingOptionProps = {
+		title: 'jest',
+		onPress: onPressMock,
+	}
 
 	afterEach(() => jest.clearAllMocks())
 

@@ -2,7 +2,7 @@
 import { RFValue } from 'react-native-responsive-fontsize'
 import { styled, css } from 'styled-components/native'
 
-export const SettingOption = styled.Pressable`
+export const SettingOption = styled.View`
 	${({ theme }) => css`
 		flex-direction: row;
 		justify-content: space-between;

@@ -11,6 +11,7 @@ const meta: Meta<ComponentProps<typeof SettingOption>> = {
 	args: {
 		icon: { name: 'user' },
 		title: 'profile',
+		onPress: () => console.log('Hi Storybook!'),
 	},
 	argTypes: {
 		icon: {
