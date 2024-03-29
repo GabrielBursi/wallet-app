@@ -1,14 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled, css } from 'styled-components/native'
 import { RFValue } from 'react-native-responsive-fontsize'
+import normalize from 'react-native-normalize'
 
 export const ActionAccount = styled.Pressable`
 	${({ theme }) => css`
 		gap: ${RFValue(theme.spacings.xsmall)}px;
 		align-items: center;
 		justify-content: center;
-		width: ${RFValue(110)}px;
-		height: ${RFValue(110)}px;
+		width: ${normalize(150)}px;
+		height: ${normalize(150)}px;
 	`}
 `
 
@@ -19,8 +20,8 @@ export const IconContainer = styled.View`
 		justify-content: center;
 		align-items: center;
 		border: 1px;
-		width: ${RFValue(65)}px;
-		height: ${RFValue(65)}px;
+		width: ${normalize(65)}px;
+		height: ${normalize(65)}px;
 		border-color: ${theme.colors.normalText};
 	`}
 `
