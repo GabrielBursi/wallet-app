@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { memo } from 'react'
 import IconFA from 'react-native-vector-icons/FontAwesome'
 import { useTheme } from 'styled-components/native'
 
 import { ActionAccountProps } from './types'
 import * as S from './styles'
 
-export const ActionAccount = ({
+const ActionAccountMemoized = ({
 	icon,
 	title,
 	...restProps
@@ -37,3 +37,5 @@ export const ActionAccount = ({
 		</S.ActionAccount>
 	)
 }
+
+export const ActionAccount = memo(ActionAccountMemoized)

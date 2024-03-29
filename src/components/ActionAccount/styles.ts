@@ -16,10 +16,11 @@ export const IconContainer = styled.View`
 	${({ theme }) => css`
 		background-color: ${theme.colors.mainBg};
 		border-radius: 50px;
-		padding: ${RFValue(theme.spacings.small)}px;
 		justify-content: center;
 		align-items: center;
 		border: 1px;
+		width: ${RFValue(65)}px;
+		height: ${RFValue(65)}px;
 		border-color: ${theme.colors.normalText};
 	`}
 `
