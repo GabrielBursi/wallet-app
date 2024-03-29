@@ -1,4 +1,4 @@
-import { PressableProps } from 'react-native'
+import { TouchableHighlightProps } from 'react-native'
 import { Icon } from '@/types/utils'
 
 /* eslint-disable @typescript-eslint/ban-types */
@@ -7,4 +7,5 @@ export type ButtonProps = {
 	type?: 'primary' | 'ghost'
 	icon?: Icon
 	fullWidth?: boolean
-} & PressableProps
+	onPress: TouchableHighlightProps['onPress']
+} & TouchableHighlightProps

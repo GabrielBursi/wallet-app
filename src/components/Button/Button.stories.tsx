@@ -16,6 +16,7 @@ const meta: Meta<ComponentProps<typeof Button>> = {
 	],
 	args: {
 		title: 'storybook',
+		onPress: () => console.log('Hi Storybook!'),
 	},
 	argTypes: {
 		icon: {

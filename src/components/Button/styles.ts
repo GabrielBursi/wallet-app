@@ -5,7 +5,7 @@ import { RFValue } from 'react-native-responsive-fontsize'
 
 import { ButtonProps } from './types'
 
-type ButtonStyledProps = Omit<ButtonProps, 'title'>
+type ButtonStyledProps = Omit<ButtonProps, 'title' | 'onPress'>
 
 type Key =
 	| Extract<ButtonProps['type'], 'primary' | 'ghost'>
@@ -31,14 +31,25 @@ const mappers: Mappers = {
 	`,
 }
 
-export const Button = styled.Pressable<ButtonStyledProps>`
+export const TouchableContainer = styled.TouchableHighlight<
+	Pick<ButtonProps, 'fullWidth'>
+>`
+	${({ theme, fullWidth = false }) => css`
+		width: auto;
+		border-radius: ${theme.border.radius.big}px;
+		width: ${RFValue(140)}px;
+		${fullWidth && mappers.fullWidth(theme)};
+	`}
+`
+
+export const ButtonContainer = styled.View<ButtonStyledProps>`
 	${({ theme, type = 'primary', fullWidth = false, icon }) => css`
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		padding: ${theme.spacings.small}px ${theme.spacings.xxsmall}px;
 		border-radius: ${theme.border.radius.big}px;
-		border: 1px;
+		border-width: 1px;
 		border-color: ${theme.colors.secondaryText};
 		width: ${RFValue(140)}px;
 

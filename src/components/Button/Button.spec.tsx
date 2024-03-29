@@ -5,13 +5,14 @@ import { customRender } from '@/tests'
 import { ButtonProps } from './types'
 import { Button } from '.'
 
-const buttonProps: ButtonProps = {
-	title: 'jest',
-}
-
 describe('<Button/>', () => {
 	const onPressMock = jest.fn()
 	const onLongPressMock = jest.fn()
+
+	const buttonProps: ButtonProps = {
+		title: 'jest',
+		onPress: onPressMock,
+	}
 
 	afterEach(() => {
 		jest.clearAllMocks()
@@ -20,7 +21,7 @@ describe('<Button/>', () => {
 	it('should render a default button', () => {
 		customRender(<Button {...buttonProps} />)
 
-		expect(screen.getByRole('button', { name: /jest/i })).toHaveStyle({
+		expect(screen.getByTestId('button-container')).toHaveStyle({
 			backgroundColor: '#5B259F',
 		})
 	})
@@ -28,7 +29,7 @@ describe('<Button/>', () => {
 	it('should render a ghost button', () => {
 		customRender(<Button {...buttonProps} type="ghost" />)
 
-		expect(screen.getByRole('button', { name: /jest/i })).toHaveStyle({
+		expect(screen.getByTestId('button-container')).toHaveStyle({
 			backgroundColor: '#FFFFFF',
 			borderColor: '#5B259F',
 		})
