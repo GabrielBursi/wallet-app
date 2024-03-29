@@ -5,7 +5,14 @@ import { SocialButtonProps } from './types'
 
 type ColorProp = Pick<SocialButtonProps, 'color'>
 
-export const SocialButton = styled.Pressable<ColorProp>`
+export const TouchableContainer = styled.TouchableHighlight`
+	${({ theme }) => css`
+		border-radius: ${theme.border.radius.big}px;
+		width: ${RFValue(140)}px;
+	`}
+`
+
+export const SocialButton = styled.View<ColorProp>`
 	${({ theme, color = 'white' }) => css`
 		flex-direction: row;
 		justify-content: center;
@@ -16,7 +23,7 @@ export const SocialButton = styled.Pressable<ColorProp>`
 		background-color: ${color === 'blue'
 			? '#4368c7'
 			: theme.colors.secondaryBg};
-		border: 1px;
+		border-width: 1px;
 		border-color: ${theme.colors.normalText};
 		width: ${RFValue(140)}px;
 	`}

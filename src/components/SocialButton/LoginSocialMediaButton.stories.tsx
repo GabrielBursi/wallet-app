@@ -14,8 +14,14 @@ const meta: Meta<ComponentProps<typeof SocialButton>> = {
 			</ThemeProvider>
 		),
 	],
+	args: {
+		onPress: () => console.log('Hi Storybook!'),
+	},
 	argTypes: {
 		icon: {
+			type: 'symbol',
+		},
+		onPress: {
 			type: 'symbol',
 		},
 	},

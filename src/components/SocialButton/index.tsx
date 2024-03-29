@@ -1,42 +1,51 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome'
+import { useTheme } from 'styled-components/native'
 
 import { SocialButtonProps } from './types'
 import * as S from './styles'
 
-//TODO:
-//? Fazer animação de clique
-
-export const SocialButton = ({
+const SocialButtonMemoized = ({
 	title,
 	color = 'white',
 	icon,
+	onPress,
 	...rest
 }: SocialButtonProps) => {
 	const { name, ...restIcon } = icon
+	const theme = useTheme()
 
 	return (
-		<S.SocialButton
+		<S.TouchableContainer
 			{...rest}
-			style={{ elevation: 6 }}
-			color={color}
+			activeOpacity={0.6}
+			underlayColor={theme.colors.shadow}
+			onPress={onPress}
 			role="button"
 			accessibilityRole="button"
 			accessibilityHint={`Fazer login com ${name}`}
 			accessibilityLabel={title}
 			aria-label={title}
 		>
-			<S.Icon>
-				<Icon
-					name={name}
-					size={20}
-					role="img"
-					accessibilityLabel={name}
-					aria-label={name}
-					{...restIcon}
-				/>
-			</S.Icon>
-			<S.Title color={color}>{title}</S.Title>
-		</S.SocialButton>
+			<S.SocialButton
+				testID="button-container"
+				style={{ elevation: 6 }}
+				color={color}
+			>
+				<S.Icon>
+					<Icon
+						name={name}
+						size={20}
+						role="img"
+						accessibilityLabel={name}
+						aria-label={name}
+						{...restIcon}
+					/>
+				</S.Icon>
+				<S.Title color={color}>{title}</S.Title>
+			</S.SocialButton>
+		</S.TouchableContainer>
 	)
 }
+
+export const SocialButton = memo(SocialButtonMemoized)
