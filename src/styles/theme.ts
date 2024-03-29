@@ -1,3 +1,5 @@
+import { lighten } from 'polished'
+
 export const theme = {
 	border: {
 		radius: {
@@ -47,6 +49,10 @@ export const theme = {
 		white: '#FFFFFF',
 		red: '#FF3333',
 		green: '#56BE15',
+		primaryShadow: lighten(0.4, `#5B259F`),
+		secondaryShadow: lighten(0.4, `#5B259F`),
+		shadow: lighten(0.4, `#828282`),
+		lightShadow: lighten(0.4, `#F2F2F2`),
 	},
 
 	spacings: {
