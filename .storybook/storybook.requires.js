@@ -56,6 +56,7 @@ const getStories = () => {
     "./src/components/NotificationCard/NotificationCard.stories.tsx": require("../src/components/NotificationCard/NotificationCard.stories.tsx"),
     "./src/components/SettingOption/SettingOption.stories.tsx": require("../src/components/SettingOption/SettingOption.stories.tsx"),
     "./src/components/SocialButton/LoginSocialMediaButton.stories.tsx": require("../src/components/SocialButton/LoginSocialMediaButton.stories.tsx"),
+    "./src/components/TransactionItem/TransactionItem.stories.tsx": require("../src/components/TransactionItem/TransactionItem.stories.tsx"),
   };
 };
 
