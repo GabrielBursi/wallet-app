@@ -45,9 +45,9 @@ const SettingOptionMemoized = ({
 					</S.Title>
 				</S.TitleContainer>
 				<Icon
-					name="arrow-right"
+					name="chevron-forward-outline"
 					size={15}
-					accessibilityLabel="arrow-right"
+					accessibilityLabel="chevron-forward-outline"
 					accessibilityHint="acessar opção de configuração"
 					role="img"
 					accessibilityRole="image"
