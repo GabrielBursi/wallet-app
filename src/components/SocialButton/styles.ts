@@ -17,8 +17,8 @@ export const SocialButton = styled.View<ColorProp>`
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		gap: ${theme.spacings.small}px;
-		padding: ${theme.spacings.small}px ${theme.spacings.xsmall}px;
+		gap: ${theme.spacings.xsmall}px;
+		padding: ${theme.spacings.small}px 0;
 		border-radius: ${theme.border.radius.big}px;
 		background-color: ${color === 'blue'
 			? '#4368c7'
@@ -38,7 +38,7 @@ export const Icon = styled.View`
 
 export const Title = styled.Text<ColorProp>`
 	${({ theme, color = 'white' }) => css`
-		font-size: ${RFValue(theme.font.sizes.small)}px;
+		font-size: ${RFValue(theme.font.sizes.medium)}px;
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 		color: ${color === 'blue' ? theme.colors.white : theme.colors.normalText};

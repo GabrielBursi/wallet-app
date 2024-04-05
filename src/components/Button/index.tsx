@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 import { useTheme } from 'styled-components/native'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 import { ButtonProps } from './types'
 import * as S from './styles'

@@ -40,7 +40,7 @@ export const Ghost: Story = {
 
 export const WithIcon: Story = {
 	args: {
-		icon: { name: 'book' },
+		icon: { name: 'book-outline' },
 	},
 }
 

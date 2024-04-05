@@ -25,14 +25,20 @@ describe('<SettingOption/>', () => {
 	})
 
 	it('should render a option with icon', () => {
-		customRender(<SettingOption {...props} icon={{ name: 'user' }} />)
+		customRender(<SettingOption {...props} icon={{ name: 'person-outline' }} />)
 
-		expect(screen.getByRole('img', { name: 'user' })).toBeOnTheScreen()
+		expect(
+			screen.getByRole('img', { name: 'person-outline' })
+		).toBeOnTheScreen()
 	})
 
 	it('should call the onPress correctly', async () => {
 		customRender(
-			<SettingOption {...props} icon={{ name: 'user' }} onPress={onPressMock} />
+			<SettingOption
+				{...props}
+				icon={{ name: 'person-outline' }}
+				onPress={onPressMock}
+			/>
 		)
 
 		await userEvent.press(screen.getByRole('text', { name: props.title }))

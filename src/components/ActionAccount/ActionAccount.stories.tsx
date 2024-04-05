@@ -8,7 +8,7 @@ const meta: Meta<ComponentProps<typeof ActionAccount>> = {
 	title: 'ActionAccount',
 	component: ActionAccount,
 	args: {
-		icon: { name: 'book' },
+		icon: { name: 'add-outline' },
 		title: 'storybook',
 	},
 	argTypes: {

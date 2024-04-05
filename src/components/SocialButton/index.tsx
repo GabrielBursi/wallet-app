@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Ionicons'
 import { useTheme } from 'styled-components/native'
 
 import { SocialButtonProps } from './types'
@@ -34,12 +34,12 @@ const SocialButtonMemoized = ({
 			>
 				<S.Icon>
 					<Icon
+						{...restIcon}
 						name={name}
-						size={20}
+						size={30}
 						role="img"
 						accessibilityLabel={name}
 						aria-label={name}
-						{...restIcon}
 					/>
 				</S.Icon>
 				<S.Title color={color}>{title}</S.Title>

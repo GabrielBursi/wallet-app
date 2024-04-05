@@ -1,10 +1,10 @@
 import React, { memo } from 'react'
-import Icon from 'react-native-vector-icons/FontAwesome'
+import { TouchableHighlight } from 'react-native'
+import Icon from 'react-native-vector-icons/Ionicons'
 import { useTheme } from 'styled-components/native'
 
 import { SettingOptionProps } from './types'
 import * as S from './styles'
-import { TouchableHighlight } from 'react-native'
 
 const SettingOptionMemoized = ({
 	title,
@@ -30,6 +30,7 @@ const SettingOptionMemoized = ({
 					{!!icon && (
 						<S.IconContainer style={{ elevation: 6 }}>
 							<Icon
+								{...icon}
 								name={icon.name}
 								size={25}
 								accessibilityLabel={icon.name}

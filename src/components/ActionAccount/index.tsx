@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import IconFA from 'react-native-vector-icons/FontAwesome'
+import Icon from 'react-native-vector-icons/Ionicons'
 import { useTheme } from 'styled-components/native'
 
 import { ActionAccountProps } from './types'
@@ -22,13 +22,13 @@ const ActionAccountMemoized = ({
 			{...restProps}
 		>
 			<S.IconContainer style={{ elevation: 4 }}>
-				<IconFA
+				<Icon
+					{...restIcon}
 					accessibilityRole="image"
 					accessibilityLabel={name}
 					color={theme.colors.primary}
 					size={35}
 					name={name}
-					{...restIcon}
 				/>
 			</S.IconContainer>
 			<S.Title accessibilityRole="text" accessibilityLabel={title}>

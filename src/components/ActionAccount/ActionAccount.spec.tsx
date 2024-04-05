@@ -7,7 +7,7 @@ import { ActionAccount } from '.'
 
 const props: ActionAccountProps = {
 	title: 'jest',
-	icon: { name: 'book' },
+	icon: { name: 'add-outline' },
 }
 
 describe('<ActionAccount/>', () => {
@@ -16,6 +16,8 @@ describe('<ActionAccount/>', () => {
 
 		expect(screen.getByAccessibilityHint('ir para jest')).toBeOnTheScreen()
 		expect(screen.getByRole('text', { name: /jest/i })).toBeOnTheScreen()
-		expect(screen.getByRole('image', { name: /book/i })).toBeOnTheScreen()
+		expect(
+			screen.getByRole('image', { name: /add-outline/i })
+		).toBeOnTheScreen()
 	})
 })

@@ -34,7 +34,7 @@ export const Google: Story = {
 	args: {
 		title: 'google',
 		icon: {
-			name: 'google',
+			name: 'logo-google',
 		},
 	},
 }
@@ -44,7 +44,7 @@ export const Facebook: Story = {
 		title: 'facebook',
 		color: 'blue',
 		icon: {
-			name: 'facebook',
+			name: 'logo-facebook',
 			color: theme.colors.white,
 		},
 	},

@@ -9,7 +9,7 @@ const meta: Meta<ComponentProps<typeof SettingOption>> = {
 	title: 'SettingOption',
 	component: SettingOption,
 	args: {
-		icon: { name: 'user' },
+		icon: { name: 'person-outline' },
 		title: 'profile',
 		onPress: () => console.log('Hi Storybook!'),
 	},

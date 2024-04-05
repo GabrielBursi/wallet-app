@@ -36,9 +36,9 @@ describe('<Button/>', () => {
 	})
 
 	it('should render a button with icon', () => {
-		customRender(<Button {...buttonProps} icon={{ name: 'book' }} />)
+		customRender(<Button {...buttonProps} icon={{ name: 'book-outline' }} />)
 
-		expect(screen.getByRole('img', { name: /book/i })).toBeOnTheScreen()
+		expect(screen.getByRole('img', { name: /book-outline/i })).toBeOnTheScreen()
 	})
 
 	it('should render a button with full width', () => {

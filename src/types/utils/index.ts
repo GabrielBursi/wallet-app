@@ -1,4 +1,4 @@
 import { ComponentProps } from 'react'
-import IconFA from 'react-native-vector-icons/FontAwesome'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 
-export type Icon = ComponentProps<typeof IconFA>
+export type Icon = ComponentProps<typeof Ionicons>

@@ -10,7 +10,7 @@ describe('<SocialButton/>', () => {
 
 	const buttonProps: SocialButtonProps = {
 		title: 'jest',
-		icon: { name: 'google' },
+		icon: { name: 'logo-google' },
 		onPress: onPressMock,
 	}
 
@@ -20,7 +20,7 @@ describe('<SocialButton/>', () => {
 		customRender(<SocialButton {...buttonProps} />)
 
 		expect(screen.getByRole('button', { name: /jest/i })).toBeOnTheScreen()
-		expect(screen.getByRole('img', { name: /google/i })).toBeOnTheScreen()
+		expect(screen.getByRole('img', { name: /logo-google/i })).toBeOnTheScreen()
 	})
 
 	it('should render the button with custom color correctly', () => {
