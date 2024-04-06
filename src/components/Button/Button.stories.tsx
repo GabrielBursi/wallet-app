@@ -5,7 +5,7 @@ import { TestProvider } from '@/providers'
 import { Button } from '.'
 
 const meta: Meta<ComponentProps<typeof Button>> = {
-	title: 'Button',
+	title: 'Components/Button',
 	component: Button,
 	decorators: [
 		(Story) => (

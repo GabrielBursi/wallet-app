@@ -5,7 +5,7 @@ import { TestProvider } from '@/providers'
 import { ActionAccount } from '.'
 
 const meta: Meta<ComponentProps<typeof ActionAccount>> = {
-	title: 'ActionAccount',
+	title: 'Components/ActionAccount',
 	component: ActionAccount,
 	args: {
 		icon: { name: 'add-outline' },

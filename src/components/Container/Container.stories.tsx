@@ -10,7 +10,7 @@ import { Button } from '../Button'
 import { NotificationCard } from '../NotificationCard'
 
 const meta: Meta<ComponentProps<typeof Container>> = {
-	title: 'Container',
+	title: 'Components/Container',
 	component: Container,
 	decorators: [
 		(Story) => (
@@ -34,7 +34,11 @@ export const Basic: Story = {
 				date="Container"
 				description="Storybook Container"
 			/>
-			<Button title="Container" fullWidth />
+			<Button
+				title="Container"
+				fullWidth
+				onPress={() => console.log('Hi Storybook!')}
+			/>
 		</Container>
 	),
 }

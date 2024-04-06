@@ -6,7 +6,7 @@ import { AccountInfo } from '.'
 import { View } from 'react-native'
 
 const meta: Meta<ComponentProps<typeof AccountInfo>> = {
-	title: 'AccountInfo',
+	title: 'Components/AccountInfo',
 	component: AccountInfo,
 	args: {
 		text: 'storybook jest',

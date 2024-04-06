@@ -5,7 +5,7 @@ import { TestProvider } from '@/providers'
 import { ActionWallet } from '.'
 
 const meta: Meta<ComponentProps<typeof ActionWallet>> = {
-	title: 'ActionWallet',
+	title: 'Components/ActionWallet',
 	component: ActionWallet,
 	args: {
 		title: 'payout',

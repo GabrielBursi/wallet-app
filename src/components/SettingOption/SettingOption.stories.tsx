@@ -6,7 +6,7 @@ import { TestProvider } from '@/providers'
 import { SettingOption } from '.'
 
 const meta: Meta<ComponentProps<typeof SettingOption>> = {
-	title: 'SettingOption',
+	title: 'Components/SettingOption',
 	component: SettingOption,
 	args: {
 		icon: { name: 'person-outline' },

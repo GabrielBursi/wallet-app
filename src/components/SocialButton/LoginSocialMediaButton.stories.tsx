@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import { theme } from '@/styles'
 
 const meta: Meta<ComponentProps<typeof SocialButton>> = {
-	title: 'SocialButton',
+	title: 'Components/SocialButton',
 	component: SocialButton,
 	decorators: [
 		(Story) => (

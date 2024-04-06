@@ -10,7 +10,7 @@ import PrimeImg from '../../assets/img/prime.png'
 import { TransactionItem } from '.'
 
 const meta: Meta<ComponentProps<typeof TransactionItem>> = {
-	title: 'TransactionItem',
+	title: 'Components/TransactionItem',
 	component: TransactionItem,
 	args: {
 		title: 'netflix',

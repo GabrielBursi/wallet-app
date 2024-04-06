@@ -6,7 +6,7 @@ import { TestProvider } from '@/providers'
 import { NotificationCard } from '.'
 
 const meta: Meta<ComponentProps<typeof NotificationCard>> = {
-	title: 'NotificationCard',
+	title: 'Components/NotificationCard',
 	component: NotificationCard,
 	args: {
 		date: '21 de Março 2024, 20:00',

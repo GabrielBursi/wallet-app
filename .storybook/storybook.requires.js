@@ -16,6 +16,13 @@ global.STORIES = [
     importPathMatcher:
       "^\\.[\\\\/](?:src[\\\\/]components(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
   },
+  {
+    titlePrefix: "",
+    directory: "./src/screens",
+    files: "**/*.stories.@(ts|tsx)",
+    importPathMatcher:
+      "^\\.[\\\\/](?:src[\\\\/]screens(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
+  },
 ];
 
 import "@storybook/addon-ondevice-notes/register";
@@ -58,6 +65,7 @@ const getStories = () => {
     "./src/components/SettingOption/SettingOption.stories.tsx": require("../src/components/SettingOption/SettingOption.stories.tsx"),
     "./src/components/SocialButton/LoginSocialMediaButton.stories.tsx": require("../src/components/SocialButton/LoginSocialMediaButton.stories.tsx"),
     "./src/components/TransactionItem/TransactionItem.stories.tsx": require("../src/components/TransactionItem/TransactionItem.stories.tsx"),
+    "./src/screens/Home/Home.stories.tsx": require("../src/screens/Home/Home.stories.tsx"),
   };
 };
 
