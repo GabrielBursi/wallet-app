@@ -21,6 +21,11 @@ export default function (plop) {
 			},
 			{
 				type: 'add',
+				path: '../src/screens/{{pascalCase name}}/{{pascalCase name}}.stories.tsx',
+				templateFile: 'templates/screen/stories.stories.tsx.hbs'
+			},
+			{
+				type: 'add',
 				path: '../src/screens/{{pascalCase name}}/styles.ts',
 				templateFile: 'templates/screen/styles.ts.hbs'
 			},

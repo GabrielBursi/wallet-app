@@ -1,0 +1,26 @@
+import { ComponentProps } from 'react'
+import type { Meta, StoryObj } from '@storybook/react';
+import { TestProvider } from '@/providers'
+
+import { {{pascalCase name}}Screen } from ".";
+
+const meta: Meta<ComponentProps<typeof {{pascalCase name}}Screen>> ={
+    title: '{{pascalCase name}}Screen',
+    component: {{pascalCase name}}Screen,
+		decorators: [
+			(Story) => (
+				<TestProvider>
+					<Story />
+				</TestProvider>
+			),
+		],
+}
+export default meta
+
+type Story = StoryObj<ComponentProps<typeof {{pascalCase name}}Screen>>;
+
+export const Basic: Story = {
+    args: {
+
+    }
+}
