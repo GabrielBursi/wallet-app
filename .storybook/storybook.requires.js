@@ -49,6 +49,7 @@ try {
 
 const getStories = () => {
   return {
+    "./src/components/AccountInfo/AccountInfo.stories.tsx": require("../src/components/AccountInfo/AccountInfo.stories.tsx"),
     "./src/components/ActionAccount/ActionAccount.stories.tsx": require("../src/components/ActionAccount/ActionAccount.stories.tsx"),
     "./src/components/ActionWallet/ActionWallet.stories.tsx": require("../src/components/ActionWallet/ActionWallet.stories.tsx"),
     "./src/components/Button/Button.stories.tsx": require("../src/components/Button/Button.stories.tsx"),

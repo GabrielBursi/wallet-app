@@ -1,3 +1,4 @@
+export * from './AccountInfo'
 export * from './ActionAccount'
 export * from './ActionWallet'
 export * from './Button'
