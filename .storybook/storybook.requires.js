@@ -60,6 +60,7 @@ const getStories = () => {
     "./src/components/ActionAccount/ActionAccount.stories.tsx": require("../src/components/ActionAccount/ActionAccount.stories.tsx"),
     "./src/components/ActionWallet/ActionWallet.stories.tsx": require("../src/components/ActionWallet/ActionWallet.stories.tsx"),
     "./src/components/Button/Button.stories.tsx": require("../src/components/Button/Button.stories.tsx"),
+    "./src/components/CardInfo/CardInfo.stories.tsx": require("../src/components/CardInfo/CardInfo.stories.tsx"),
     "./src/components/Container/Container.stories.tsx": require("../src/components/Container/Container.stories.tsx"),
     "./src/components/NotificationCard/NotificationCard.stories.tsx": require("../src/components/NotificationCard/NotificationCard.stories.tsx"),
     "./src/components/SettingOption/SettingOption.stories.tsx": require("../src/components/SettingOption/SettingOption.stories.tsx"),
