@@ -1,6 +1,9 @@
 import React, { memo } from 'react'
+
 import { TransactionItemProps } from './types'
 import * as S from './styles'
+
+import { formatFloatToCurrency } from '@/functions'
 
 const TransactionItemMemoized = ({
 	title,
@@ -8,12 +11,7 @@ const TransactionItemMemoized = ({
 	description,
 	image,
 }: TransactionItemProps) => {
-	const currencyFormat = new Intl.NumberFormat('pt-BR', {
-		style: 'currency',
-		currency: 'BRL',
-	})
-
-	const formattedValue = currencyFormat.format(value)
+	const formattedValue = formatFloatToCurrency(value)
 
 	return (
 		<S.TransactionItem>

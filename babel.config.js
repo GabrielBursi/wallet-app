@@ -17,6 +17,7 @@ module.exports = {
 					'@/tests': './src/tests',
 					'@/types': './src/types',
 					'@/utils': './src/utils',
+					'@/functions': './src/functions',
 				},
 			},
 		],
