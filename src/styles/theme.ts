@@ -1,4 +1,6 @@
 import { lighten } from 'polished'
+import normalize from 'react-native-normalize'
+import { RFValue } from 'react-native-responsive-fontsize'
 
 export const theme = {
 	border: {
@@ -28,13 +30,13 @@ export const theme = {
 		normal: 400,
 		bold: 600,
 		sizes: {
-			xsmall: 12,
-			small: 14,
-			medium: 16,
-			large: 18,
-			xlarge: 20,
-			xxlarge: 28,
-			huge: 50,
+			xsmall: RFValue(12) as 12,
+			small: RFValue(14) as 14,
+			medium: RFValue(16) as 16,
+			large: RFValue(18) as 18,
+			xlarge: RFValue(20) as 20,
+			xxlarge: RFValue(28) as 28,
+			huge: RFValue(50) as 50,
 		},
 	},
 	colors: {
@@ -56,13 +58,13 @@ export const theme = {
 	},
 
 	spacings: {
-		xxsmall: 4,
-		xsmall: 8,
-		small: 16,
-		medium: 24,
-		large: 32,
-		xlarge: 40,
-		xxlarge: 48,
+		xxsmall: normalize(4) as 4,
+		xsmall: normalize(8) as 8,
+		small: normalize(16) as 16,
+		medium: normalize(24) as 24,
+		large: normalize(32) as 32,
+		xlarge: normalize(40) as 40,
+		xxlarge: normalize(48) as 48,
 	},
 	layers: {
 		base: 10,

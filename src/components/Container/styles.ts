@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { RFValue } from 'react-native-responsive-fontsize'
 import { styled, css } from 'styled-components/native'
 
 export const Container = styled.View`
@@ -7,7 +6,7 @@ export const Container = styled.View`
 		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
-		padding-left: ${RFValue(theme.spacings.small)}px;
-		padding-right: ${RFValue(theme.spacings.small)}px;
+		padding-left: ${theme.spacings.small}px;
+		padding-right: ${theme.spacings.small}px;
 	`}
 `

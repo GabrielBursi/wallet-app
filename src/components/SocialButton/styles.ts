@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled, css } from 'styled-components/native'
-import { RFValue } from 'react-native-responsive-fontsize'
+import normalize from 'react-native-normalize'
 import { SocialButtonProps } from './types'
 
 type ColorProp = Pick<SocialButtonProps, 'color'>
@@ -8,7 +8,7 @@ type ColorProp = Pick<SocialButtonProps, 'color'>
 export const TouchableContainer = styled.TouchableHighlight`
 	${({ theme }) => css`
 		border-radius: ${theme.border.radius.big}px;
-		width: ${RFValue(140)}px;
+		width: ${normalize(140)}px;
 	`}
 `
 
@@ -25,7 +25,7 @@ export const SocialButton = styled.View<ColorProp>`
 			: theme.colors.secondaryBg};
 		border-width: 1px;
 		border-color: ${theme.colors.normalText};
-		width: ${RFValue(140)}px;
+		width: ${normalize(140)}px;
 	`}
 `
 
@@ -38,7 +38,7 @@ export const Icon = styled.View`
 
 export const Title = styled.Text<ColorProp>`
 	${({ theme, color = 'white' }) => css`
-		font-size: ${RFValue(theme.font.sizes.medium)}px;
+		font-size: ${theme.font.sizes.medium}px;
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 		color: ${color === 'blue' ? theme.colors.white : theme.colors.normalText};

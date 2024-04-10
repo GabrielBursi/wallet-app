@@ -1,11 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled, css } from 'styled-components/native'
-import { RFValue } from 'react-native-responsive-fontsize'
 import normalize from 'react-native-normalize'
 
 export const ActionAccount = styled.Pressable`
 	${({ theme }) => css`
-		gap: ${RFValue(theme.spacings.xsmall)}px;
+		gap: ${theme.spacings.xsmall}px;
 		align-items: center;
 		justify-content: center;
 		width: ${normalize(150)}px;
@@ -31,6 +30,6 @@ export const Title = styled.Text`
 		color: ${theme.colors.primary};
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
-		font-size: ${RFValue(theme.font.sizes.large)}px;
+		font-size: ${theme.font.sizes.large}px;
 	`}
 `

@@ -2,7 +2,6 @@
 import { styled, css } from 'styled-components/native'
 import normalize from 'react-native-normalize'
 import { lighten } from 'polished'
-import { RFValue } from 'react-native-responsive-fontsize'
 
 export const ActionWallet = styled.Pressable`
 	${({ theme }) => css`
@@ -32,6 +31,6 @@ export const Title = styled.Text`
 		color: ${theme.colors.secondaryText};
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
-		font-size: ${RFValue(theme.font.sizes.small)}px;
+		font-size: ${theme.font.sizes.small}px;
 	`}
 `

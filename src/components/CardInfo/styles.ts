@@ -1,15 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled, css } from 'styled-components/native'
-import { RFValue } from 'react-native-responsive-fontsize'
-import normalize from 'react-native-normalize'
 
 export const CardInfo = styled.View`
 	${({ theme }) => css`
 		background-color: ${theme.colors.secondary};
-		padding: ${normalize(theme.spacings.xlarge)}px;
+		padding: ${theme.spacings.xlarge}px;
 		flex-direction: row;
 		align-items: center;
-		gap: ${normalize(theme.spacings.xxsmall)}px;
+		gap: ${theme.spacings.xxsmall}px;
 		border-radius: 40px;
 	`}
 `
@@ -24,7 +22,7 @@ export const ColumnInfo = styled.View<{ flex?: 1 | 2 }>`
 export const Label = styled.Text`
 	${({ theme }) => css`
 		color: ${theme.colors.white};
-		font-size: ${RFValue(theme.font.sizes.small)}px;
+		font-size: ${theme.font.sizes.small}px;
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 	`}
@@ -33,7 +31,7 @@ export const Label = styled.Text`
 export const ValueText = styled.Text`
 	${({ theme }) => css`
 		color: ${theme.colors.white};
-		font-size: ${RFValue(theme.font.sizes.large)}px;
+		font-size: ${theme.font.sizes.large}px;
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 	`}

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled, css, DefaultTheme } from 'styled-components/native'
 import { RuleSet } from 'styled-components/native/dist/types'
-import { RFValue } from 'react-native-responsive-fontsize'
+import normalize from 'react-native-normalize'
 
 import { ButtonProps } from './types'
 
@@ -37,7 +37,7 @@ export const TouchableContainer = styled.TouchableHighlight<
 	${({ theme, fullWidth = false }) => css`
 		width: auto;
 		border-radius: ${theme.border.radius.big}px;
-		width: ${RFValue(140)}px;
+		width: ${normalize(140)}px;
 		${fullWidth && mappers.fullWidth(theme)};
 	`}
 `
@@ -51,7 +51,7 @@ export const ButtonContainer = styled.View<ButtonStyledProps>`
 		border-radius: ${theme.border.radius.big}px;
 		border-width: 1px;
 		border-color: ${theme.colors.secondaryText};
-		width: ${RFValue(140)}px;
+		width: ${normalize(140)}px;
 
 		${mappers[type](theme)}
 		${fullWidth && mappers.fullWidth(theme)}
@@ -63,7 +63,7 @@ export const Title = styled.Text<Pick<ButtonStyledProps, 'type'>>`
 	${({ theme, type = 'primary' }) => css`
 		color: ${type === 'primary' ? theme.colors.white : theme.colors.primary};
 		font-family: ${theme.font.family.poppinsSemiBold};
-		font-size: ${RFValue(theme.font.sizes.medium)}px;
+		font-size: ${theme.font.sizes.medium}px;
 		text-align: center;
 		text-transform: capitalize;
 	`}
