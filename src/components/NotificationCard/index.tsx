@@ -15,7 +15,7 @@ const NotificationCardMemoized = ({
 	const theme = useTheme()
 
 	return (
-		<S.NotificationCard style={{ elevation: 4 }}>
+		<S.NotificationCard style={{ elevation: theme.elevation.medium }}>
 			{isNew && <S.IsNewContainer accessibilityHint="nova notificação" />}
 			<S.Content>
 				<S.DateText

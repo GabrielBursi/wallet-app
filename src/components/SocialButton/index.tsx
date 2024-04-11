@@ -29,7 +29,7 @@ const SocialButtonMemoized = ({
 		>
 			<S.SocialButton
 				testID="button-container"
-				style={{ elevation: 6 }}
+				style={{ elevation: theme.elevation.medium }}
 				color={color}
 			>
 				<S.Icon>

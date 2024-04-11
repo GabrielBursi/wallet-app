@@ -21,7 +21,7 @@ const ActionAccountMemoized = ({
 			accessibilityLabel={title}
 			{...restProps}
 		>
-			<S.IconContainer style={{ elevation: 4 }}>
+			<S.IconContainer style={{ elevation: theme.elevation.medium }}>
 				<Icon
 					{...restIcon}
 					accessibilityRole="image"

@@ -15,7 +15,7 @@ export const ActionWallet = ({ icon, title, ...rest }: ActionWalletProps) => {
 			accessibilityLabel={icon.name}
 			accessibilityHint={`ir para ${title}`}
 		>
-			<S.IconContainer style={{ elevation: 4 }}>
+			<S.IconContainer style={{ elevation: theme.elevation.medium }}>
 				<Icon
 					{...icon}
 					name={icon.name}

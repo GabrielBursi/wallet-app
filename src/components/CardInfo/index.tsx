@@ -1,13 +1,17 @@
 import React, { memo } from 'react'
+import { useTheme } from 'styled-components/native'
+
 import { CardInfoProps } from './types'
 import * as S from './styles'
+
 import { formatFloatToCurrency } from '@/functions'
 
 const CardInfoMemoized = ({ balance, name }: CardInfoProps) => {
 	const formattedBalance = formatFloatToCurrency(balance)
+	const theme = useTheme()
 
 	return (
-		<S.CardInfo style={{ elevation: 12 }}>
+		<S.CardInfo style={{ elevation: theme.elevation.xlarge }}>
 			<S.ColumnInfo flex={2}>
 				<S.Label accessibilityRole="text">balance</S.Label>
 				<S.ValueText

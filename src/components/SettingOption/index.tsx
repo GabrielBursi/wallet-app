@@ -28,7 +28,7 @@ const SettingOptionMemoized = ({
 			<S.SettingOption>
 				<S.TitleContainer>
 					{!!icon && (
-						<S.IconContainer style={{ elevation: 6 }}>
+						<S.IconContainer style={{ elevation: theme.elevation.medium }}>
 							<Icon
 								{...icon}
 								name={icon.name}
