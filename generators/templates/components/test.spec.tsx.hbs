@@ -3,7 +3,7 @@ import { customRender } from '@/tests'
 import { {{pascalCase name}} } from '.'
 
 describe('<{{pascalCase name}}/>', () => {
-    it('should render', () => {
+    it('should render correctly', () => {
         customRender(<{{pascalCase name}}/>)
 
         expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })).toBeOnTheScreen()

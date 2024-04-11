@@ -9,7 +9,7 @@ describe('<CardInfo/>', () => {
 		balance: 2500.2,
 	}
 
-	it('should render', () => {
+	it('should render correctly', () => {
 		customRender(<CardInfo {...props} />)
 
 		expect(screen.getAllByRole('text')).toHaveLength(4)

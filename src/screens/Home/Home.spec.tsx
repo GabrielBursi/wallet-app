@@ -3,7 +3,7 @@ import { customRender } from '@/tests'
 import { HomeScreen } from '.'
 
 describe('<HomeScreen/>', () => {
-	it('should render', () => {
+	it('should render correctly', () => {
 		customRender(<HomeScreen />)
 
 		expect(screen.getByRole('text', { name: /Home/i })).toBeOnTheScreen()

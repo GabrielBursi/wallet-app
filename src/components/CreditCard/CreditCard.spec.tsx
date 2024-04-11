@@ -10,7 +10,7 @@ describe('<CreditCard/>', () => {
 		number: 1234432112344321,
 	}
 
-	it('should render', () => {
+	it('should render correctly', () => {
 		customRender(<CreditCard {...props} />)
 
 		expect(
