@@ -14,6 +14,7 @@
 		"e2e:test": "detox test --configuration android.emu.debug -l warn --take-screenshots failing",
 		"generate:c": "plop --plopfile ./generators/component.mjs && npm run format",
 		"generate:s": "plop --plopfile ./generators/screen.mjs && npm run format",
+		"generate:t": "plop --plopfile ./generators/template.mjs && npm run format",
 		"generate:e2e": "plop --plopfile ./generators/e2e.mjs && npm run format",
 		"sb": "react-native start",
 		"get-sb": "sb-rn-get-stories",
