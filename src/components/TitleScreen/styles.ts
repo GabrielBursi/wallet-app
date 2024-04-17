@@ -7,5 +7,6 @@ export const TitleScreen = styled.Text`
 		font-family: ${theme.font.family.poppinsSemiBold};
 		font-size: ${theme.font.sizes.xlarge}px;
 		text-transform: capitalize;
+		text-align: center;
 	`}
 `

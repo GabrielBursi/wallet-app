@@ -23,7 +23,7 @@ const meta: Meta<ComponentProps<typeof Input>> = {
 		(Story) => (
 			<TestProvider>
 				<View style={{ padding: 10 }}>
-					<KeyboardAvoidingView behavior="height">
+					<KeyboardAvoidingView behavior="padding">
 						<Story />
 					</KeyboardAvoidingView>
 				</View>
