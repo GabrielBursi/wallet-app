@@ -18,6 +18,7 @@ module.exports = {
 					'@/types': './src/types',
 					'@/utils': './src/utils',
 					'@/functions': './src/functions',
+					'@/templates': './src/templates',
 				},
 			},
 		],

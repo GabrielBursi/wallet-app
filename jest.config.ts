@@ -12,19 +12,9 @@ const config: Config = {
 	],
 	roots: ['<rootDir>/src'],
 	collectCoverageFrom: [
-		'src/components/**/*.tsx',
-		'src/screens/**/*.tsx',
-		'!src/components/**/*.spec.tsx',
-		'!src/components/**/*.stories.tsx',
-		'!src/screens/**/*.spec.tsx',
-		'!src/**/*.spec.tsx',
-		'!src/types/**',
-		'!src/styles/**',
-		'!src/**/*.stories.tsx',
-		'!src/**/types.ts',
-		'!src/**/styles.ts',
-		'!src/components/index.ts',
-		'!src/screens/index.ts',
+		'src/components/**/index.tsx',
+		'src/screens/**/index.tsx',
+		'src/templates/**/index.tsx',
 	],
 }
 
