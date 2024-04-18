@@ -39,8 +39,11 @@ const InputMemoized = ({
 				>
 					<Icon
 						{...iconLeft}
+						onPress={(ev) => {
+							setHasFocus(true)
+							iconLeft.onPress && iconLeft.onPress(ev)
+						}}
 						name={iconLeft.name}
-						onPressIn={() => setHasFocus(true)}
 						color={hasFocus ? theme.colors.primary : theme.colors.normalText}
 						size={25}
 						accessibilityRole="image"
@@ -72,7 +75,10 @@ const InputMemoized = ({
 				>
 					<Icon
 						{...iconRight}
-						onPressIn={() => setHasFocus(true)}
+						onPress={(ev) => {
+							setHasFocus(true)
+							iconRight.onPress && iconRight.onPress(ev)
+						}}
 						name={iconRight.name}
 						color={hasFocus ? theme.colors.primary : theme.colors.normalText}
 						size={25}

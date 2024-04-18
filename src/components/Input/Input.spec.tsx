@@ -89,9 +89,17 @@ describe('<Input/>', () => {
 	})
 
 	it('should focus the text input when the left icon is pressed correctly', async () => {
-		customRender(<Input accessibilityLabel="focus" {...props} />)
+		customRender(
+			<Input
+				accessibilityLabel="focus"
+				{...props}
+				iconLeft={{ name: 'lock-closed-outline' }}
+			/>
+		)
 
-		await userEvent.press(screen.getByRole('image', { name: 'beaker-outline' }))
+		await userEvent.press(
+			screen.getByRole('image', { name: 'lock-closed-outline' })
+		)
 		expect(screen.getByTestId('input-container')).toHaveAccessibilityState({
 			busy: undefined,
 			checked: undefined,
@@ -113,9 +121,15 @@ describe('<Input/>', () => {
 	})
 
 	it('should focus the text input when the right icon is pressed correctly', async () => {
-		customRender(<Input accessibilityLabel="focus" {...props} />)
+		customRender(
+			<Input
+				accessibilityLabel="focus"
+				{...props}
+				iconRight={{ name: 'eye-outline' }}
+			/>
+		)
 
-		await userEvent.press(screen.getByRole('image', { name: 'star-outline' }))
+		await userEvent.press(screen.getByRole('image', { name: 'eye-outline' }))
 		expect(screen.getByTestId('input-container')).toHaveAccessibilityState({
 			busy: undefined,
 			checked: undefined,
