@@ -4,6 +4,7 @@ import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock'
 import { userEvent } from '@testing-library/react-native'
 
 import { server } from '@/tests'
+import { mockNavigation } from '@/tests/mocks'
 
 jest.mock('react-native-reanimated', () => {
 	const Reanimated = require('react-native-reanimated/mock')
@@ -15,9 +16,16 @@ jest.mock('react-native-reanimated', () => {
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper')
 jest.mock('react-native-safe-area-context', () => mockSafeAreaContext)
 
+jest.mock('@react-navigation/native', () => ({
+	...(jest.requireActual('@react-navigation/native')),
+	useNavigation: () => ({
+		...mockNavigation
+	}),
+}))
+
 beforeAll(() => {
 	server.listen({ onUnhandledRequest: 'error' })
 	userEvent.setup()
 })
-afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
+afterEach(() => server.resetHandlers())
