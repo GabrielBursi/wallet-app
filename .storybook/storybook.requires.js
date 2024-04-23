@@ -23,6 +23,13 @@ global.STORIES = [
     importPathMatcher:
       "^\\.[\\\\/](?:src[\\\\/]screens(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
   },
+  {
+    titlePrefix: "",
+    directory: "./src/templates",
+    files: "**/*.stories.@(ts|tsx)",
+    importPathMatcher:
+      "^\\.[\\\\/](?:src[\\\\/]templates(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
+  },
 ];
 
 import "@storybook/addon-ondevice-notes/register";
@@ -69,7 +76,9 @@ const getStories = () => {
     "./src/components/SocialButton/LoginSocialMediaButton.stories.tsx": require("../src/components/SocialButton/LoginSocialMediaButton.stories.tsx"),
     "./src/components/TitleScreen/TitleScreen.stories.tsx": require("../src/components/TitleScreen/TitleScreen.stories.tsx"),
     "./src/components/TransactionItem/TransactionItem.stories.tsx": require("../src/components/TransactionItem/TransactionItem.stories.tsx"),
-    "./src/screens/Home/Home.stories.tsx": require("../src/screens/Home/Home.stories.tsx"),
+    "./src/screens/SignIn/SignIn.stories.tsx": require("../src/screens/SignIn/SignIn.stories.tsx"),
+    "./src/screens/SignUp/SignUp.stories.tsx": require("../src/screens/SignUp/SignUp.stories.tsx"),
+    "./src/templates/Auth/Auth.stories.tsx": require("../src/templates/Auth/Auth.stories.tsx"),
   };
 };
 
