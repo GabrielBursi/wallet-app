@@ -9,7 +9,7 @@ export const TransactionItem = styled.View`
 		gap: ${theme.spacings.xsmall}px;
 		justify-content: space-between;
 		align-items: center;
-		padding: ${theme.spacings.xxsmall}px ${theme.spacings.small}px;
+		padding: ${theme.spacings.xxsmall}px 0px;
 	`}
 `
 

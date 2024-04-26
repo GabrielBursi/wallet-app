@@ -14,7 +14,7 @@ const TransactionItemMemoized = ({
 	const formattedValue = formatFloatToCurrency(value)
 
 	return (
-		<S.TransactionItem>
+		<S.TransactionItem accessible role="listitem" accessibilityLabel={title}>
 			<S.Content>
 				{!!image && (
 					<S.ImageIcon

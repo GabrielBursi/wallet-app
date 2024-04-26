@@ -1,9 +1,4 @@
-import { ImageSourcePropType } from 'react-native'
+import { Transaction } from '@/types/app'
 
 /* eslint-disable @typescript-eslint/ban-types */
-export type TransactionItemProps = {
-	title: string
-	description?: string
-	value: number
-	image?: ImageSourcePropType
-}
+export type TransactionItemProps = Omit<Transaction, 'date'>

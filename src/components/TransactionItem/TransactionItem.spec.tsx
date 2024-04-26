@@ -16,6 +16,7 @@ describe('<TransactionItem/>', () => {
 	it('should render a default transaction item', () => {
 		customRender(<TransactionItem {...props} />)
 
+		expect(screen.getByRole('listitem', { name: /Jest/i })).toBeOnTheScreen()
 		expect(screen.getByRole('text', { name: /Jest/i })).toBeOnTheScreen()
 		expect(screen.getByRole('text', { name: 'R$ 22,00' })).toBeOnTheScreen()
 	})
