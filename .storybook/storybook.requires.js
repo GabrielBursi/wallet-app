@@ -71,6 +71,7 @@ const getStories = () => {
     "./src/components/Container/Container.stories.tsx": require("../src/components/Container/Container.stories.tsx"),
     "./src/components/CreditCard/CreditCard.stories.tsx": require("../src/components/CreditCard/CreditCard.stories.tsx"),
     "./src/components/Input/Input.stories.tsx": require("../src/components/Input/Input.stories.tsx"),
+    "./src/components/LastTransactions/LastTransactions.stories.tsx": require("../src/components/LastTransactions/LastTransactions.stories.tsx"),
     "./src/components/Menu/Menu.stories.tsx": require("../src/components/Menu/Menu.stories.tsx"),
     "./src/components/NotificationCard/NotificationCard.stories.tsx": require("../src/components/NotificationCard/NotificationCard.stories.tsx"),
     "./src/components/SettingOption/SettingOption.stories.tsx": require("../src/components/SettingOption/SettingOption.stories.tsx"),
