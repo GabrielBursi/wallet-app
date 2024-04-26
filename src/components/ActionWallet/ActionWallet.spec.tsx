@@ -4,12 +4,13 @@ import { ActionWallet } from '.'
 import { ActionWalletProps } from './types'
 
 describe('<ActionWallet/>', () => {
+	const onPressMock = jest.fn()
+
 	const props: ActionWalletProps = {
 		icon: { name: 'earth-outline' },
 		title: 'jest',
+		onPress: onPressMock,
 	}
-
-	const onPressMock = jest.fn()
 
 	afterEach(() => jest.clearAllMocks())
 

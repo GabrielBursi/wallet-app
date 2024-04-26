@@ -4,4 +4,5 @@ import { Icon } from '@/types/utils'
 export type ActionWalletProps = {
 	title: string
 	icon: Icon
-} & PressableProps
+	onPress: PressableProps['onPress']
+} & Omit<PressableProps, 'onPress'>

@@ -8,12 +8,12 @@ export const ActionWallet = styled.Pressable`
 		justify-content: center;
 		align-items: center;
 		gap: ${theme.spacings.xxsmall}px;
-		width: ${normalize(90)}px;
-		height: ${normalize(90)}px;
+		width: ${normalize(76)}px;
+		height: ${normalize(76)}px;
 	`}
 `
 
-export const IconContainer = styled.View`
+export const IconContainer = styled.TouchableHighlight`
 	${({ theme }) => css`
 		background-color: ${theme.colors.mainBg};
 		border-radius: ${theme.border.radius.big}px;
@@ -31,6 +31,6 @@ export const Title = styled.Text`
 		color: ${theme.colors.secondaryText};
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
-		font-size: ${theme.font.sizes.small}px;
+		font-size: ${theme.font.sizes.xsmall}px;
 	`}
 `
