@@ -19,6 +19,7 @@ module.exports = {
 					'@/utils': './src/utils',
 					'@/functions': './src/functions',
 					'@/templates': './src/templates',
+					'@/mock': './src/mock',
 				},
 			},
 		],
