@@ -21,7 +21,7 @@ export const Title = styled.Text`
 	${({ theme }) => css`
 		color: ${theme.colors.primaryText};
 		font-family: ${theme.font.family.poppinsSemiBold};
-		font-size: ${theme.font.sizes.xlarge}px;
+		font-size: ${theme.font.sizes.large}px;
 		text-transform: capitalize;
 	`}
 `

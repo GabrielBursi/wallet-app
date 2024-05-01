@@ -4,11 +4,12 @@ import { styled, css } from 'styled-components/native'
 export const CardInfo = styled.View`
 	${({ theme }) => css`
 		background-color: ${theme.colors.secondary};
-		padding: ${theme.spacings.xlarge}px;
+		padding: ${theme.spacings.medium}px;
 		flex-direction: row;
 		align-items: center;
 		gap: ${theme.spacings.xxsmall}px;
 		border-radius: 40px;
+		height: 100%;
 	`}
 `
 
