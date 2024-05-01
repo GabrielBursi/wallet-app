@@ -1,6 +1,7 @@
 export * from './AccountInfo'
 export * from './ActionAccount'
 export * from './ActionWallet'
+export * from './Avatar'
 export * from './Button'
 export * from './CardInfo'
 export * from './Container'
