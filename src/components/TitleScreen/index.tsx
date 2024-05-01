@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { TitleScreenProps } from './types'
 import * as S from './styles'
 
-export const TitleScreen = ({ title }: TitleScreenProps) => {
+const TitleScreenMemoized = ({ title }: TitleScreenProps) => {
 	return <S.TitleScreen accessibilityRole="text">{title}</S.TitleScreen>
 }
+
+export const TitleScreen = memo(TitleScreenMemoized)

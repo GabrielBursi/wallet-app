@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { TotalBalanceProps } from './types'
 import * as S from './styles'
 
 import { formatFloatToCurrency } from '@/functions'
 
-export const TotalBalance = ({ balance }: TotalBalanceProps) => {
+const TotalBalanceMemoized = ({ balance }: TotalBalanceProps) => {
 	const balanceFormatted = formatFloatToCurrency(balance)
 
 	return (
@@ -14,3 +14,5 @@ export const TotalBalance = ({ balance }: TotalBalanceProps) => {
 		</S.TotalBalance>
 	)
 }
+
+export const TotalBalance = memo(TotalBalanceMemoized)
