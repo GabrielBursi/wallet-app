@@ -3,7 +3,7 @@ import '@testing-library/jest-native/extend-expect'
 import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock'
 import { userEvent } from '@testing-library/react-native'
 
-import { server } from '@/tests'
+import { serverApiTest } from '@/tests'
 import { mockNavigation } from '@/tests/mocks'
 
 jest.mock('react-native-reanimated', () => {
@@ -24,8 +24,8 @@ jest.mock('@react-navigation/native', () => ({
 }))
 
 beforeAll(() => {
-	server.listen({ onUnhandledRequest: 'error' })
+	serverApiTest.listen({ onUnhandledRequest: 'error' })
 	userEvent.setup()
 })
-afterAll(() => server.close())
-afterEach(() => server.resetHandlers())
+afterAll(() => serverApiTest.close())
+afterEach(() => serverApiTest.resetHandlers())
