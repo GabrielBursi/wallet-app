@@ -1,9 +1,12 @@
+import { Dimensions, View } from 'react-native'
 import { ComponentProps } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { TestProvider } from '@/providers'
 
 import { CardInfo } from '.'
 import { Container } from '../Container'
+
+const height = Dimensions.get('window').height / 4
 
 const meta: Meta<ComponentProps<typeof CardInfo>> = {
 	title: 'Components/CardInfo',
@@ -21,6 +24,11 @@ const meta: Meta<ComponentProps<typeof CardInfo>> = {
 			</TestProvider>
 		),
 	],
+	render: (args) => (
+		<View style={{ height: height }}>
+			<CardInfo {...args} />
+		</View>
+	),
 }
 export default meta
 
