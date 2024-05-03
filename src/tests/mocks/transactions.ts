@@ -1,6 +1,6 @@
-import { Transaction } from '@/types/app'
-import NetflixImg from '../assets/img/netflix.png'
 import { ImageSourcePropType } from 'react-native'
+import { Transaction } from '@/types/app'
+import NetflixImg from '../../assets/img/netflix.png'
 
 export const mockTransactions: Transaction[] = [
 	{

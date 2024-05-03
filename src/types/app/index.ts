@@ -7,3 +7,11 @@ export type Transaction = {
 	image?: ImageSourcePropType
 	date: Date
 }
+
+export type Notification = {
+	title: string
+	description: string
+	date: string
+	isNew?: boolean
+	type?: 'received' | 'spent'
+}

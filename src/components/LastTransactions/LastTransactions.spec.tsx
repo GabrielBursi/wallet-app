@@ -1,8 +1,7 @@
 import { screen, userEvent } from '@testing-library/react-native'
 
 import { customRender } from '@/tests'
-import { mockTransactions } from '@/mock'
-import { mockNavigation } from '@/tests/mocks'
+import { mockNavigation, mockTransactions } from '@/tests/mocks'
 
 import { LastTransactions } from '.'
 
