@@ -1,6 +1,9 @@
+import { Dimensions } from 'react-native'
 import { lighten } from 'polished'
 import normalize from 'react-native-normalize'
 import { RFValue } from 'react-native-responsive-fontsize'
+
+const windowHeight = Dimensions.get('window').height
 
 export const theme = {
 	border: {
@@ -30,13 +33,13 @@ export const theme = {
 		normal: 400,
 		bold: 600,
 		sizes: {
-			xsmall: RFValue(12) as 12,
-			small: RFValue(14) as 14,
-			medium: RFValue(16) as 16,
-			large: RFValue(18) as 18,
-			xlarge: RFValue(20) as 20,
-			xxlarge: RFValue(28) as 28,
-			huge: RFValue(50) as 50,
+			xsmall: RFValue(10, windowHeight) as 10,
+			small: RFValue(12, windowHeight) as 12,
+			medium: RFValue(14, windowHeight) as 14,
+			large: RFValue(16, windowHeight) as 16,
+			xlarge: RFValue(18, windowHeight) as 18,
+			xxlarge: RFValue(20, windowHeight) as 20,
+			huge: RFValue(48, windowHeight) as 48,
 		},
 	},
 	colors: {
