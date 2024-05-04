@@ -2,7 +2,7 @@ import React from 'react'
 import { FlashList } from '@shopify/flash-list'
 import normalize from 'react-native-normalize'
 
-import { NotificationCard } from '@/components'
+import { EmptyList, NotificationCard } from '@/components'
 
 import * as S from './styles'
 import { NotificationListProps } from './types'
@@ -28,6 +28,7 @@ export const NotificationList = ({
 				<S.TitleList accessibilityRole="text">{title}</S.TitleList>
 			}
 			ItemSeparatorComponent={S.Separator}
+			ListEmptyComponent={<EmptyList title="Você não possui notificações" />}
 			refreshing={refreshing}
 			onRefresh={onRefresh}
 			showsVerticalScrollIndicator={false}

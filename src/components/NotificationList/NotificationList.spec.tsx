@@ -23,6 +23,15 @@ describe('<NotificationList/>', () => {
 		).toBeOnTheScreen()
 	})
 
+	it('should render a empty list correctly', () => {
+		customRender(<NotificationList title={title} notifications={[]} />)
+
+		expect(screen.queryAllByRole('listitem')).toHaveLength(0)
+		expect(
+			screen.getByRole('text', { name: 'Você não possui notificações' })
+		).toBeOnTheScreen()
+	})
+
 	it('should call the refresh function correctly', async () => {
 		customRender(
 			<NotificationList

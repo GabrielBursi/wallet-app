@@ -66,3 +66,9 @@ export const Refreshing: Story = {
 		refreshing: true,
 	},
 }
+export const Empty: Story = {
+	args: {
+		title: 'Empty',
+		notifications: [],
+	},
+}
