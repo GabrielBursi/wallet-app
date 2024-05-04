@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { styled, css } from 'styled-components/native'
 import normalize from 'react-native-normalize'
+import { lighten } from 'polished'
 
 export const NotificationCard = styled.View`
 	${({ theme }) => css`
@@ -10,8 +11,10 @@ export const NotificationCard = styled.View`
 		background-color: ${theme.colors.mainBg};
 		border-radius: ${theme.border.radius.big}px;
 		position: relative;
-		height: ${normalize(125)}px;
+		height: ${normalize(125, 'height')}px;
 		padding: ${theme.spacings.xsmall}px ${theme.spacings.small}px;
+		border-width: 1px;
+		border-color: ${lighten(0.3, theme.colors.normalText)};
 	`}
 `
 
@@ -51,7 +54,7 @@ export const DateText = styled.Text`
 export const DescriptionText = styled.Text`
 	${({ theme }) => css`
 		color: ${theme.colors.normalText};
-		font-size: ${theme.font.sizes.xsmall}px;
+		font-size: ${theme.font.sizes.small}px;
 		font-family: ${theme.font.family.poppinsLight};
 		letter-spacing: ${normalize(1)}px;
 	`}

@@ -6,7 +6,7 @@ export const CreditCard = styled.View`
 		background-color: ${theme.colors.secondary};
 		padding: ${theme.spacings.medium}px;
 		border-radius: 40px;
-		height: ${normalize(220)}px;
+		height: ${normalize(220, 'height')}px;
 		border-width: 1px;
 		border-color: ${theme.colors.primary};
 		justify-content: space-between;
@@ -21,8 +21,8 @@ export const Container = styled.View<{ align?: 'start' | 'end' }>`
 `
 
 export const ImageStyled = styled.Image`
-	width: ${normalize(40)}px;
-	height: ${normalize(40)}px;
+	width: ${normalize(40, 'width')}px;
+	height: ${normalize(40, 'height')}px;
 `
 
 export const NumberContainer = styled.View`

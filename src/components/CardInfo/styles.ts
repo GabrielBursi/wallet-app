@@ -13,17 +13,17 @@ export const CardInfo = styled.View`
 	`}
 `
 
-export const ColumnInfo = styled.View<{ flex?: 1 | 2 }>`
-	${({ theme, flex = 1 }) => css`
+export const ColumnInfo = styled.View`
+	${({ theme }) => css`
 		gap: ${theme.spacings.xxsmall}px;
-		flex: ${flex};
+		flex: 1;
 	`}
 `
 
 export const Label = styled.Text`
 	${({ theme }) => css`
 		color: ${theme.colors.white};
-		font-size: ${theme.font.sizes.small}px;
+		font-size: ${theme.font.sizes.large}px;
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 	`}
@@ -32,7 +32,7 @@ export const Label = styled.Text`
 export const ValueText = styled.Text`
 	${({ theme }) => css`
 		color: ${theme.colors.white};
-		font-size: ${theme.font.sizes.large}px;
+		font-size: ${theme.font.sizes.xxlarge}px;
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 	`}

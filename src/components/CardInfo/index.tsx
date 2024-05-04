@@ -12,7 +12,7 @@ const CardInfoMemoized = ({ balance, name }: CardInfoProps) => {
 
 	return (
 		<S.CardInfo style={{ elevation: theme.elevation.xlarge }}>
-			<S.ColumnInfo flex={2}>
+			<S.ColumnInfo>
 				<S.Label accessibilityRole="text">balance</S.Label>
 				<S.ValueText
 					accessibilityRole="text"

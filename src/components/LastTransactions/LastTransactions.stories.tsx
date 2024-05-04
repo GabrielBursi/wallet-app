@@ -5,7 +5,7 @@ import { TestProvider } from '@/providers'
 import { LastTransactions } from '.'
 
 import { Container } from '@/components'
-import { mockTransactions } from '@/tests/mocks'
+import { mockTransactions } from '@/tests/mocks/transactions'
 
 const meta: Meta<ComponentProps<typeof LastTransactions>> = {
 	title: 'Components/LastTransactions',

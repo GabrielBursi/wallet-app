@@ -7,8 +7,8 @@ export const ActionAccount = styled.Pressable`
 		gap: ${theme.spacings.xsmall}px;
 		align-items: center;
 		justify-content: center;
-		width: ${normalize(150)}px;
-		height: ${normalize(150)}px;
+		width: ${normalize(150, 'width')}px;
+		height: ${normalize(150, 'height')}px;
 	`}
 `
 
@@ -19,8 +19,8 @@ export const IconContainer = styled.View`
 		justify-content: center;
 		align-items: center;
 		border: 1px;
-		width: ${normalize(65)}px;
-		height: ${normalize(65)}px;
+		width: ${normalize(65, 'width')}px;
+		height: ${normalize(65, 'height')}px;
 		border-color: ${theme.colors.normalText};
 	`}
 `

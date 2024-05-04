@@ -8,7 +8,7 @@ type ColorProp = Pick<SocialButtonProps, 'color'>
 export const TouchableContainer = styled.TouchableHighlight`
 	${({ theme }) => css`
 		border-radius: ${theme.border.radius.big}px;
-		width: ${normalize(140)}px;
+		width: ${normalize(140, 'width')}px;
 	`}
 `
 
@@ -25,7 +25,7 @@ export const SocialButton = styled.View<ColorProp>`
 			: theme.colors.secondaryBg};
 		border-width: 1px;
 		border-color: ${theme.colors.normalText};
-		width: ${normalize(140)}px;
+		width: ${normalize(140, 'width')}px;
 	`}
 `
 

@@ -37,7 +37,7 @@ export const TouchableContainer = styled.TouchableHighlight<
 	${({ theme, fullWidth = false }) => css`
 		width: auto;
 		border-radius: ${theme.border.radius.big}px;
-		width: ${normalize(140)}px;
+		width: ${normalize(140, 'width')}px;
 		${fullWidth && mappers.fullWidth(theme)};
 	`}
 `
@@ -51,7 +51,7 @@ export const ButtonContainer = styled.View<ButtonStyledProps>`
 		border-radius: ${theme.border.radius.big}px;
 		border-width: 1px;
 		border-color: ${theme.colors.secondaryText};
-		width: ${normalize(140)}px;
+		width: ${normalize(140, 'width')}px;
 
 		${mappers[type](theme)}
 		${fullWidth && mappers.fullWidth(theme)}

@@ -8,8 +8,8 @@ export const ActionWallet = styled.Pressable`
 		justify-content: center;
 		align-items: center;
 		gap: ${theme.spacings.xxsmall}px;
-		width: ${normalize(76)}px;
-		height: ${normalize(76)}px;
+		width: ${normalize(76, 'width')}px;
+		height: ${normalize(76, 'height')}px;
 	`}
 `
 
@@ -20,8 +20,8 @@ export const IconContainer = styled.TouchableHighlight`
 		justify-content: center;
 		align-items: center;
 		border-width: 1px;
-		width: ${normalize(55)}px;
-		height: ${normalize(55)}px;
+		width: ${normalize(55, 'width')}px;
+		height: ${normalize(55, 'height')}px;
 		border-color: ${lighten(0.6, theme.colors.normalText)};
 	`}
 `

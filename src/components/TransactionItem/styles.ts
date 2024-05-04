@@ -57,8 +57,8 @@ export const TitleContainer = styled.View``
 
 export const ImageIcon = styled.Image`
 	${({ theme }) => css`
-		width: ${normalize(45)}px;
-		height: ${normalize(45)}px;
+		width: ${normalize(45, 'width')}px;
+		height: ${normalize(45, 'height')}px;
 		border-radius: ${theme.border.radius.medium}px;
 	`}
 `
