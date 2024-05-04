@@ -1,5 +1,6 @@
 import '@testing-library/react-native/extend-expect'
 import '@testing-library/jest-native/extend-expect'
+require("@shopify/flash-list/jestSetup");
 import mockSafeAreaContext from 'react-native-safe-area-context/jest/mock'
 import { userEvent } from '@testing-library/react-native'
 
