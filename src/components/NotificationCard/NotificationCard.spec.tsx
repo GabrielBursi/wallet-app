@@ -13,6 +13,9 @@ describe('<NotificationCard/>', () => {
 	it('should render correctly', () => {
 		customRender(<NotificationCard {...props} />)
 
+		expect(
+			screen.getByRole('listitem', { name: props.title })
+		).toBeOnTheScreen()
 		expect(screen.getByRole('text', { name: props.date })).toBeOnTheScreen()
 		expect(
 			screen.getByRole('text', { name: props.description })
