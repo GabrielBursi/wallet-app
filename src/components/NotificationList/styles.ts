@@ -8,6 +8,7 @@ export const TitleList = styled.Text`
 		font-family: ${theme.font.family.poppinsSemiBold};
 		text-transform: capitalize;
 		text-align: center;
+		background-color: ${theme.colors.mainBg};
 	`}
 `
 

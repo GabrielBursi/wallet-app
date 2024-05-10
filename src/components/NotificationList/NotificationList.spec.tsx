@@ -17,7 +17,7 @@ describe('<NotificationList/>', () => {
 		)
 
 		expect(screen.getByRole('list', { name: title })).toBeOnTheScreen()
-		expect(screen.getByRole('text', { name: title })).toBeOnTheScreen()
+		expect(screen.getAllByRole('text', { name: title })).toHaveLength(2)
 		expect(
 			screen.getByRole('listitem', { name: /Notification 1/i })
 		).toBeOnTheScreen()
@@ -26,6 +26,7 @@ describe('<NotificationList/>', () => {
 	it('should render a empty list correctly', () => {
 		customRender(<NotificationList title={title} notifications={[]} />)
 
+		expect(screen.getByRole('text', { name: title })).toBeOnTheScreen()
 		expect(screen.queryAllByRole('listitem')).toHaveLength(0)
 		expect(
 			screen.getByRole('text', { name: 'Você não possui notificações' })
