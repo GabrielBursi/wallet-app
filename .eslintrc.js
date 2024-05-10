@@ -31,7 +31,7 @@ module.exports = {
 		project: './tsconfig.json',
 		tsconfigRootDir: __dirname,
 	},
-	plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+	plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier', 'jest'],
 	rules: {
 		'no-empty-function': 'off',
 		'@typescript-eslint/no-empty-function': 'off',
@@ -41,6 +41,11 @@ module.exports = {
 		'react/react-in-jsx-scope': 'off',
 		'react-hooks/exhaustive-deps': 'warn',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
+		"jest/no-disabled-tests": "warn",
+		"jest/no-focused-tests": "error",
+		"jest/no-identical-title": "error",
+		"jest/prefer-to-have-length": "warn",
+		"jest/valid-expect": "error"
 	},
 	settings: {
 		react: {
