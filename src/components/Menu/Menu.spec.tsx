@@ -22,7 +22,7 @@ describe('<Menu/>', () => {
 	it('should navigate to the right screen correctly when the second button is pressed', async () => {
 		customRender(<Menu />)
 
-		const button = screen.getByRole('menuitem', { name: /transações/i })
+		const button = screen.getByRole('menuitem', { name: /cartão/i })
 		await userEvent.press(button)
 		expect(mockNavigation.navigate).toHaveBeenCalledWith('teste')
 	})
