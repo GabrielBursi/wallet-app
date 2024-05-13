@@ -17,7 +17,7 @@ export const Menu = () => {
 			/>
 			<ActionWallet
 				onPress={() => navigation.navigate('teste')}
-				title="Transações"
+				title="Cartão"
 				icon={{ name: 'reader-outline' }}
 				role="menuitem"
 			/>
