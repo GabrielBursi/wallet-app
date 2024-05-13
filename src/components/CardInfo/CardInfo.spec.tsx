@@ -13,6 +13,6 @@ describe('<CardInfo/>', () => {
 		customRender(<CardInfo {...props} />)
 
 		expect(screen.getAllByRole('text')).toHaveLength(4)
-		expect(screen.getByRole('text', { name: 'R$ 2.500,20' }))
+		expect(screen.getByRole('text', { name: 'R$ 2.500,20' })).toBeOnTheScreen()
 	})
 })
