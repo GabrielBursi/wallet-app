@@ -1,5 +1,6 @@
 export * from './Card'
 export * from './CreateCard'
+export * from './Payment'
 export * from './Dashboard'
 export * from './Notifications'
 export * from './Settings'
