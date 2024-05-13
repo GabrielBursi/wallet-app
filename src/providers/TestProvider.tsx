@@ -9,7 +9,14 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { theme } from '@/styles'
 
 export const TestProvider = ({ children }: PropsWithChildren) => {
-	const queryClient = new QueryClient()
+	const queryClient = new QueryClient({
+		defaultOptions: {
+			queries: {
+				retry: false,
+				gcTime: Infinity,
+			},
+		},
+	})
 
 	return (
 		<QueryClientProvider client={queryClient}>
