@@ -1,4 +1,5 @@
 export * from './Card'
+export * from './CreateCard'
 export * from './Dashboard'
 export * from './Notifications'
 export * from './Settings'
