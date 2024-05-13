@@ -1,7 +1,8 @@
 import { HttpHandler, HttpResponse, http } from 'msw'
 import Config from 'react-native-config'
 
-import { mockNotifications, mockTransactions } from '@/tests/mocks'
+import { mockNotifications } from '@/tests/mocks/notifications'
+import { mockTransactions } from '@/tests/mocks/transactions'
 
 export const handlers: HttpHandler[] = [
 	http.get(`https://api.github.com/users/:username`, ({ request, params }) => {
