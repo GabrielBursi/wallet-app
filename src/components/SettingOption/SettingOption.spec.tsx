@@ -18,6 +18,9 @@ describe('<SettingOption/>', () => {
 	it('should render a default option', () => {
 		customRender(<SettingOption {...props} />)
 
+		expect(
+			screen.getByRole('menuitem', { name: props.title })
+		).toBeOnTheScreen()
 		expect(screen.getByRole('text', { name: props.title })).toBeOnTheScreen()
 		expect(
 			screen.getByAccessibilityHint('acessar opção de configuração')

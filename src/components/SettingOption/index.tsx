@@ -17,12 +17,11 @@ const SettingOptionMemoized = ({
 	return (
 		<TouchableHighlight
 			{...rest}
+			accessible
 			activeOpacity={0.6}
 			underlayColor={theme.colors.shadow}
 			onPress={onPress}
-			role="button"
-			accessibilityRole="button"
-			aria-label={title}
+			accessibilityRole="menuitem"
 			accessibilityLabel={title}
 		>
 			<S.SettingOption>
