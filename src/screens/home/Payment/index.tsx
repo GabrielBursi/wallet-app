@@ -5,7 +5,7 @@ import * as S from './styles'
 export const PaymentScreen = () => {
 	return (
 		<S.Payment>
-			<Text>Payment</Text>
+			<Text accessibilityRole="text">Payment</Text>
 		</S.Payment>
 	)
 }

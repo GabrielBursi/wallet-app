@@ -13,7 +13,7 @@ const config: Config = {
 	roots: ['<rootDir>/src'],
 	collectCoverageFrom: [
 		'src/components/**/index.tsx',
-		'src/screens/**/index.tsx',
+		'src/screens/**/**/index.tsx',
 		'src/templates/**/index.tsx',
 	],
 }

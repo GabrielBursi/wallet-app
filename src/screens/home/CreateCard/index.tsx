@@ -5,7 +5,7 @@ import * as S from './styles'
 export const CreateCardScreen = () => {
 	return (
 		<S.CreateCard>
-			<Text>CreateCard</Text>
+			<Text accessibilityRole="text">CreateCard</Text>
 		</S.CreateCard>
 	)
 }

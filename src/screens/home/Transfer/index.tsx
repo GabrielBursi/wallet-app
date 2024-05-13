@@ -5,7 +5,7 @@ import * as S from './styles'
 export const TransferScreen = () => {
 	return (
 		<S.Transfer>
-			<Text>Transfer</Text>
+			<Text accessibilityRole="text">Transfer</Text>
 		</S.Transfer>
 	)
 }

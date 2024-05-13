@@ -6,8 +6,6 @@ describe('<DashboardScreen/>', () => {
 	it('should render correctly', () => {
 		customRender(<DashboardScreen />)
 
-		expect(
-			screen.getByRole('heading', { name: /Dashboard/i })
-		).toBeOnTheScreen()
+		expect(screen.getByRole('text', { name: /Dashboard/i })).toBeOnTheScreen()
 	})
 })

@@ -19,7 +19,7 @@ global.STORIES = [
   {
     titlePrefix: "",
     directory: "./src/screens",
-    files: "**/*.stories.@(ts|tsx)",
+    files: "**/**/*.stories.@(ts|tsx)",
     importPathMatcher:
       "^\\.[\\\\/](?:src[\\\\/]screens(?:[\\\\/](?!\\.)(?:(?:(?!(?:^|[\\\\/])\\.).)*?)[\\\\/]|[\\\\/]|$)(?!\\.)(?=.)[^\\\\/]*?\\.stories\\.(ts|tsx))$",
   },
@@ -82,10 +82,17 @@ const getStories = () => {
     "./src/components/TitleScreen/TitleScreen.stories.tsx": require("../src/components/TitleScreen/TitleScreen.stories.tsx"),
     "./src/components/TotalBalance/TotalBalance.stories.tsx": require("../src/components/TotalBalance/TotalBalance.stories.tsx"),
     "./src/components/TransactionItem/TransactionItem.stories.tsx": require("../src/components/TransactionItem/TransactionItem.stories.tsx"),
-    "./src/screens/Notifications/Notifications.stories.tsx": require("../src/screens/Notifications/Notifications.stories.tsx"),
-    "./src/screens/Settings/Settings.stories.tsx": require("../src/screens/Settings/Settings.stories.tsx"),
-    "./src/screens/SignIn/SignIn.stories.tsx": require("../src/screens/SignIn/SignIn.stories.tsx"),
-    "./src/screens/SignUp/SignUp.stories.tsx": require("../src/screens/SignUp/SignUp.stories.tsx"),
+    "./src/screens/auth/SignIn/SignIn.stories.tsx": require("../src/screens/auth/SignIn/SignIn.stories.tsx"),
+    "./src/screens/auth/SignUp/SignUp.stories.tsx": require("../src/screens/auth/SignUp/SignUp.stories.tsx"),
+    "./src/screens/home/Card/Card.stories.tsx": require("../src/screens/home/Card/Card.stories.tsx"),
+    "./src/screens/home/CreateCard/CreateCard.stories.tsx": require("../src/screens/home/CreateCard/CreateCard.stories.tsx"),
+    "./src/screens/home/Payment/Payment.stories.tsx": require("../src/screens/home/Payment/Payment.stories.tsx"),
+    "./src/screens/home/Transfer/Transfer.stories.tsx": require("../src/screens/home/Transfer/Transfer.stories.tsx"),
+    "./src/screens/home/Wallet/Wallet.stories.tsx": require("../src/screens/home/Wallet/Wallet.stories.tsx"),
+    "./src/screens/settings/Profile/Profile.stories.tsx": require("../src/screens/settings/Profile/Profile.stories.tsx"),
+    "./src/screens/settings/Settings/Settings.stories.tsx": require("../src/screens/settings/Settings/Settings.stories.tsx"),
+    "./src/screens/tab/Dashboard/Dashboard.stories.tsx": require("../src/screens/tab/Dashboard/Dashboard.stories.tsx"),
+    "./src/screens/tab/Notifications/Notifications.stories.tsx": require("../src/screens/tab/Notifications/Notifications.stories.tsx"),
     "./src/templates/Auth/Auth.stories.tsx": require("../src/templates/Auth/Auth.stories.tsx"),
   };
 };

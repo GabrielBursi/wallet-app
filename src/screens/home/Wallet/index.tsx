@@ -5,7 +5,7 @@ import * as S from './styles'
 export const WalletScreen = () => {
 	return (
 		<S.Wallet>
-			<Text>Wallet</Text>
+			<Text accessibilityRole="text">Wallet</Text>
 		</S.Wallet>
 	)
 }

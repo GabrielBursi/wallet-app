@@ -6,6 +6,6 @@ describe('<TransferScreen/>', () => {
 	it('should render correctly', () => {
 		customRender(<TransferScreen />)
 
-		expect(screen.getByRole('heading', { name: /Transfer/i })).toBeOnTheScreen()
+		expect(screen.getByRole('text', { name: /Transfer/i })).toBeOnTheScreen()
 	})
 })

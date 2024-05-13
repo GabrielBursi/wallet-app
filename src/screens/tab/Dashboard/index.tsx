@@ -5,7 +5,7 @@ import * as S from './styles'
 export const DashboardScreen = () => {
 	return (
 		<S.Dashboard>
-			<Text>Dashboard</Text>
+			<Text accessibilityRole="text">Dashboard</Text>
 		</S.Dashboard>
 	)
 }

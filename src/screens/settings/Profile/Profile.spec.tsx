@@ -6,6 +6,6 @@ describe('<ProfileScreen/>', () => {
 	it('should render correctly', () => {
 		customRender(<ProfileScreen />)
 
-		expect(screen.getByRole('heading', { name: /Profile/i })).toBeOnTheScreen()
+		expect(screen.getByRole('text', { name: /Profile/i })).toBeOnTheScreen()
 	})
 })

@@ -6,6 +6,6 @@ describe('<WalletScreen/>', () => {
 	it('should render correctly', () => {
 		customRender(<WalletScreen />)
 
-		expect(screen.getByRole('heading', { name: /Wallet/i })).toBeOnTheScreen()
+		expect(screen.getByRole('text', { name: /Wallet/i })).toBeOnTheScreen()
 	})
 })

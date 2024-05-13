@@ -6,8 +6,6 @@ describe('<CreateCardScreen/>', () => {
 	it('should render correctly', () => {
 		customRender(<CreateCardScreen />)
 
-		expect(
-			screen.getByRole('heading', { name: /CreateCard/i })
-		).toBeOnTheScreen()
+		expect(screen.getByRole('text', { name: /CreateCard/i })).toBeOnTheScreen()
 	})
 })
