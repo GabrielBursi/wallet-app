@@ -83,6 +83,7 @@ const getStories = () => {
     "./src/components/TotalBalance/TotalBalance.stories.tsx": require("../src/components/TotalBalance/TotalBalance.stories.tsx"),
     "./src/components/TransactionItem/TransactionItem.stories.tsx": require("../src/components/TransactionItem/TransactionItem.stories.tsx"),
     "./src/screens/Notifications/Notifications.stories.tsx": require("../src/screens/Notifications/Notifications.stories.tsx"),
+    "./src/screens/Settings/Settings.stories.tsx": require("../src/screens/Settings/Settings.stories.tsx"),
     "./src/screens/SignIn/SignIn.stories.tsx": require("../src/screens/SignIn/SignIn.stories.tsx"),
     "./src/screens/SignUp/SignUp.stories.tsx": require("../src/screens/SignUp/SignUp.stories.tsx"),
     "./src/templates/Auth/Auth.stories.tsx": require("../src/templates/Auth/Auth.stories.tsx"),
