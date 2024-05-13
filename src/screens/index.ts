@@ -1,3 +1,4 @@
+export * from './Card'
 export * from './Dashboard'
 export * from './Notifications'
 export * from './Settings'
