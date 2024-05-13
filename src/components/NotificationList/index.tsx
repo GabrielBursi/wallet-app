@@ -74,7 +74,6 @@ export const NotificationList = ({
 					<S.TitleList
 						accessibilityRole="text"
 						aria-hidden={!!notifications.length}
-						// accessibilityState={{ disabled: !!notifications.length }}
 						accessibilityElementsHidden={!!notifications.length}
 					>
 						{title}
