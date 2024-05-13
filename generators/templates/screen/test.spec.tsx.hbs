@@ -6,6 +6,6 @@ describe('<{{pascalCase name}}Screen/>', () => {
     it('should render correctly', () => {
         customRender(<{{pascalCase name}}Screen/>)
 
-        expect(screen.getByRole('heading', { name: /{{pascalCase name}}/i })).toBeOnTheScreen()
+        expect(screen.getByRole('text', { name: /{{pascalCase name}}/i })).toBeOnTheScreen()
     })
 })
