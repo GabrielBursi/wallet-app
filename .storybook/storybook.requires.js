@@ -79,6 +79,8 @@ const getStories = () => {
     "./src/components/NotificationList/NotificationList.stories.tsx": require("../src/components/NotificationList/NotificationList.stories.tsx"),
     "./src/components/SettingOption/SettingOption.stories.tsx": require("../src/components/SettingOption/SettingOption.stories.tsx"),
     "./src/components/SocialButton/LoginSocialMediaButton.stories.tsx": require("../src/components/SocialButton/LoginSocialMediaButton.stories.tsx"),
+    "./src/components/TabBarIcon/TabBarIcon.stories.tsx": require("../src/components/TabBarIcon/TabBarIcon.stories.tsx"),
+    "./src/components/TabBarLabel/TabBarLabel.stories.tsx": require("../src/components/TabBarLabel/TabBarLabel.stories.tsx"),
     "./src/components/TitleScreen/TitleScreen.stories.tsx": require("../src/components/TitleScreen/TitleScreen.stories.tsx"),
     "./src/components/TotalBalance/TotalBalance.stories.tsx": require("../src/components/TotalBalance/TotalBalance.stories.tsx"),
     "./src/components/TransactionItem/TransactionItem.stories.tsx": require("../src/components/TransactionItem/TransactionItem.stories.tsx"),
