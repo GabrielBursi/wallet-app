@@ -1,19 +1,20 @@
 import { ComponentProps } from 'react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { TestProvider } from '@/providers'
-
-import { LastTransactions } from '.'
-
-import { Container } from '@/components'
 import { mockTransactions } from '@/tests/mocks/transactions'
 
-const meta: Meta<ComponentProps<typeof LastTransactions>> = {
-	title: 'Components/LastTransactions',
-	component: LastTransactions,
+import { Container } from '../Container'
+import { TransactionList } from '.'
+
+const meta: Meta<ComponentProps<typeof TransactionList>> = {
+	title: 'Components/TransactionList',
+	component: TransactionList,
 	decorators: [
 		(Story) => (
 			<TestProvider>
-				<Story />
+				<Container>
+					<Story />
+				</Container>
 			</TestProvider>
 		),
 	],
@@ -25,16 +26,17 @@ const meta: Meta<ComponentProps<typeof LastTransactions>> = {
 	args: {
 		transactions: mockTransactions,
 	},
-	render: () => (
-		<Container>
-			<LastTransactions transactions={mockTransactions} />
-		</Container>
-	),
 }
 export default meta
 
-type Story = StoryObj<ComponentProps<typeof LastTransactions>>
+type Story = StoryObj<ComponentProps<typeof TransactionList>>
 
 export const Basic: Story = {
 	args: {},
+}
+
+export const Empty: Story = {
+	args: {
+		transactions: [],
+	},
 }

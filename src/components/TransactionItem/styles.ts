@@ -10,6 +10,7 @@ export const TransactionItem = styled.View`
 		justify-content: space-between;
 		align-items: center;
 		padding: ${theme.spacings.xxsmall}px 0px;
+		height: ${normalize(60, 'height')}px;
 	`}
 `
 
