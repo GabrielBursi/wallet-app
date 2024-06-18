@@ -19,7 +19,6 @@
 		"sb": "react-native start",
 		"get-sb": "sb-rn-get-stories",
 		"presb": "npm run get-sb",
-		"prestart": "npm run get-sb",
 		"storybook-watcher": "sb-rn-watcher",
 		"rdt": "react-devtools",
 		"lint": "eslint --ext .tsx --ext .ts src/",
